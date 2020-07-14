@@ -1,0 +1,5 @@
+# Skip VS config
+.vs/
+
+# Skip debug files
+Debug/
