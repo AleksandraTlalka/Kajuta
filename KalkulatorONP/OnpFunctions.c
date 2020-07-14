@@ -91,7 +91,7 @@ struct Onp* addToOnp(struct Onp* pTail, enum Type type, double value)
 	return node;
 }
 
-struct Onp* addToPair(struct Onp* pTail, struct Stack* pStack)
+struct Pair* addToPair(struct Onp* pTail, struct Stack* pStack)
 {
 	struct Pair* pair = (struct Pair*)malloc(sizeof(struct Pair));
 	pair->pOnp = pTail;
