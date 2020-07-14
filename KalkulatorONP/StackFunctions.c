@@ -58,12 +58,12 @@ struct Pair* modyfyStack(struct Stack* pStack, struct Onp* pTail, enum Type type
 	return addToPair(pTail, pStack);
 }
 
-struct Stack* addToStack(struct Stack* head, enum Type type, double prioryty)
+struct Stack* addToStack(struct Stack* pStack, enum Type type, double prioryty)
 {
 	struct Stack* node = (struct Stack*)malloc(sizeof(struct Stack));
 	node->type = type;
 	node->prioryty = prioryty;
-	node->pPrev = head;
+	node->pPrev = pStack;
 	return node;
 }
 
