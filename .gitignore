@@ -3,3 +3,9 @@
 
 # Skip debug files
 Debug/
+
+# Skip VS files
+.sln/
+.vcxproj/
+.vcxproj.filters/
+.vcxproj.user/
