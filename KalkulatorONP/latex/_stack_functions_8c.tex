@@ -1,0 +1,62 @@
+\hypertarget{_stack_functions_8c}{}\doxysection{Dokumentacja pliku Stack\+Functions.\+c}
+\label{_stack_functions_8c}\index{StackFunctions.c@{StackFunctions.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$ctype.\+h$>$}\newline
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}Constans.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Structures.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Functions.\+h\char`\"{}}\newline
+\doxysubsection*{Definicje}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_stack_functions_8c_a411c46599e926f8cdf49c63957255359}{\+\_\+\+C\+R\+T\+\_\+\+S\+E\+C\+U\+R\+E\+\_\+\+N\+O\+\_\+\+D\+E\+P\+R\+E\+C\+A\+TE}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_pair}{Pair}} $\ast$ \mbox{\hyperlink{_stack_functions_8c_ac7d287f176dcaa3640dde7526567e873}{stack\+Action}} (struct \mbox{\hyperlink{struct_stack}{Stack}} $\ast$p\+Stack, struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$p\+Tail, enum \mbox{\hyperlink{_structures_8h_a1d1cfd8ffb84e947f82999c682b666a7}{Type}} type)
+\item 
+struct \mbox{\hyperlink{struct_pair}{Pair}} $\ast$ \mbox{\hyperlink{_stack_functions_8c_a82f9d4d30cc7b36d6eccb517627e4be4}{modyfy\+Stack}} (struct \mbox{\hyperlink{struct_stack}{Stack}} $\ast$p\+Stack, struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$p\+Tail, enum \mbox{\hyperlink{_structures_8h_a1d1cfd8ffb84e947f82999c682b666a7}{Type}} type)
+\item 
+struct \mbox{\hyperlink{struct_stack}{Stack}} $\ast$ \mbox{\hyperlink{_stack_functions_8c_a12e4a82fa69284dd2dbb2aebbbbf4dda}{add\+To\+Stack}} (struct \mbox{\hyperlink{struct_stack}{Stack}} $\ast$head, enum \mbox{\hyperlink{_structures_8h_a1d1cfd8ffb84e947f82999c682b666a7}{Type}} type, double prioryty)
+\item 
+struct \mbox{\hyperlink{struct_stack}{Stack}} $\ast$ \mbox{\hyperlink{_stack_functions_8c_a7f7806debeef2ad983043b7052a9ba9a}{remove\+From\+Stack}} (struct \mbox{\hyperlink{struct_stack}{Stack}} $\ast$p\+Stack)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Dokumentacja definicji}
+\mbox{\Hypertarget{_stack_functions_8c_a411c46599e926f8cdf49c63957255359}\label{_stack_functions_8c_a411c46599e926f8cdf49c63957255359}} 
+\index{StackFunctions.c@{StackFunctions.c}!\_CRT\_SECURE\_NO\_DEPRECATE@{\_CRT\_SECURE\_NO\_DEPRECATE}}
+\index{\_CRT\_SECURE\_NO\_DEPRECATE@{\_CRT\_SECURE\_NO\_DEPRECATE}!StackFunctions.c@{StackFunctions.c}}
+\doxysubsubsection{\texorpdfstring{\_CRT\_SECURE\_NO\_DEPRECATE}{\_CRT\_SECURE\_NO\_DEPRECATE}}
+{\footnotesize\ttfamily \#define \+\_\+\+C\+R\+T\+\_\+\+S\+E\+C\+U\+R\+E\+\_\+\+N\+O\+\_\+\+D\+E\+P\+R\+E\+C\+A\+TE}
+
+
+
+\doxysubsection{Dokumentacja funkcji}
+\mbox{\Hypertarget{_stack_functions_8c_a12e4a82fa69284dd2dbb2aebbbbf4dda}\label{_stack_functions_8c_a12e4a82fa69284dd2dbb2aebbbbf4dda}} 
+\index{StackFunctions.c@{StackFunctions.c}!addToStack@{addToStack}}
+\index{addToStack@{addToStack}!StackFunctions.c@{StackFunctions.c}}
+\doxysubsubsection{\texorpdfstring{addToStack()}{addToStack()}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_stack}{Stack}}$\ast$ add\+To\+Stack (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_stack}{Stack}} $\ast$}]{head,  }\item[{enum \mbox{\hyperlink{_structures_8h_a1d1cfd8ffb84e947f82999c682b666a7}{Type}}}]{type,  }\item[{double}]{prioryty }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_stack_functions_8c_a82f9d4d30cc7b36d6eccb517627e4be4}\label{_stack_functions_8c_a82f9d4d30cc7b36d6eccb517627e4be4}} 
+\index{StackFunctions.c@{StackFunctions.c}!modyfyStack@{modyfyStack}}
+\index{modyfyStack@{modyfyStack}!StackFunctions.c@{StackFunctions.c}}
+\doxysubsubsection{\texorpdfstring{modyfyStack()}{modyfyStack()}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_pair}{Pair}}$\ast$ modyfy\+Stack (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_stack}{Stack}} $\ast$}]{p\+Stack,  }\item[{struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$}]{p\+Tail,  }\item[{enum \mbox{\hyperlink{_structures_8h_a1d1cfd8ffb84e947f82999c682b666a7}{Type}}}]{type }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_stack_functions_8c_a7f7806debeef2ad983043b7052a9ba9a}\label{_stack_functions_8c_a7f7806debeef2ad983043b7052a9ba9a}} 
+\index{StackFunctions.c@{StackFunctions.c}!removeFromStack@{removeFromStack}}
+\index{removeFromStack@{removeFromStack}!StackFunctions.c@{StackFunctions.c}}
+\doxysubsubsection{\texorpdfstring{removeFromStack()}{removeFromStack()}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_stack}{Stack}}$\ast$ remove\+From\+Stack (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_stack}{Stack}} $\ast$}]{p\+Stack }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_stack_functions_8c_ac7d287f176dcaa3640dde7526567e873}\label{_stack_functions_8c_ac7d287f176dcaa3640dde7526567e873}} 
+\index{StackFunctions.c@{StackFunctions.c}!stackAction@{stackAction}}
+\index{stackAction@{stackAction}!StackFunctions.c@{StackFunctions.c}}
+\doxysubsubsection{\texorpdfstring{stackAction()}{stackAction()}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_pair}{Pair}}$\ast$ stack\+Action (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_stack}{Stack}} $\ast$}]{p\+Stack,  }\item[{struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$}]{p\+Tail,  }\item[{enum \mbox{\hyperlink{_structures_8h_a1d1cfd8ffb84e947f82999c682b666a7}{Type}}}]{type }\end{DoxyParamCaption})}
+

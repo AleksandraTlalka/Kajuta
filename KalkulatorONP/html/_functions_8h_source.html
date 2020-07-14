@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>KalkulatorONP: Plik źródłowy Functions.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">KalkulatorONP
+   </div>
+   <div id="projectbrief">by Aleksandra Tlałka</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_functions_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Functions.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_functions_8h.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef FUNCTIONS_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define FUNCTIONS_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">// UI functions</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keywordtype">char</span>* <a class="code" href="_functions_8h.html#ad20c2cd759c26a6d892271f330a0ff0e">getUserInput</a>();</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_functions_8h.html#a08f6390f37552cd213545974c1138e21">printOnp</a>(<span class="keyword">struct</span> <a class="code" href="struct_onp.html">Onp</a>* pHead);</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_functions_8h.html#a70adbc55a0c16718127c2f400f46495e">manual</a>();</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// Convert functions</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">enum</span> <a class="code" href="_structures_8h.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a> <a class="code" href="_functions_8h.html#a18e9186252836be9a4419817b163ac11">getType</a>(<span class="keywordtype">char</span> input);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keywordtype">int</span> <a class="code" href="_functions_8h.html#ac9e2ddd7666b80169b8d9a3f8419d8e7">getPriority</a>(<span class="keyword">enum</span> <a class="code" href="_structures_8h.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a> type);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keywordtype">char</span>* <a class="code" href="_functions_8h.html#a5d68478129b5d370844926679292d7b2">getOperation</a>(<span class="keyword">enum</span> <a class="code" href="_structures_8h.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a> type);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keywordtype">int</span> <a class="code" href="_functions_8h.html#a8eb50677d53a8e741c0b65a2cb8b5e71">charToDigit</a>(<span class="keywordtype">char</span> character);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keywordtype">double</span> <a class="code" href="_functions_8h.html#abe283f6439d58e519bc78bdd94939395">getFraction</a>(<span class="keywordtype">double</span> <a class="code" href="_structures_8h.html#a1d1cfd8ffb84e947f82999c682b666a7afcd7df4b0a5d1b09723e22742d8a60a3">number</a>);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">// Onp functions</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">struct </span><a class="code" href="struct_onp.html">Onp</a>* <a class="code" href="_functions_8h.html#a377d8f0635f6388fa18c5c0e10305242">onpBuilder</a>(<span class="keywordtype">double</span> result, <span class="keywordtype">char</span>* input);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">struct </span><a class="code" href="struct_onp.html">Onp</a>* <a class="code" href="_functions_8h.html#a19a2c214f3d579e85c1a4d862f2c3900">addToOnp</a>(<span class="keyword">struct</span> <a class="code" href="struct_onp.html">Onp</a>* tail, <span class="keyword">enum</span> <a class="code" href="_structures_8h.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a> <a class="code" href="struct_onp.html#a524c8a64b179c1b8bc30b21b25760ac0">type</a>, <span class="keywordtype">double</span> <a class="code" href="struct_onp.html#aee90379adb0307effb138f4871edbc5c">value</a>);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">struct </span><a class="code" href="struct_onp.html">Onp</a>* <a class="code" href="_functions_8h.html#add319689d7b76a1ba020ff38fe45fafd">addToPair</a>(<span class="keyword">struct</span> <a class="code" href="struct_onp.html">Onp</a>* pTail, <span class="keyword">struct</span> <a class="code" href="struct_stack.html">Stack</a>* pStack);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">struct </span><a class="code" href="struct_onp.html">Onp</a>* <a class="code" href="_functions_8h.html#a7256e18b1853e5958a83bf869dc7c503">findOnpHead</a>(<span class="keyword">struct</span> <a class="code" href="struct_onp.html">Onp</a>* pTail);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">struct </span><a class="code" href="struct_onp.html">Onp</a>* <a class="code" href="_functions_8h.html#a06d601a646f481e88b29d464f8b972be">stateControl</a>(<span class="keyword">struct</span> <a class="code" href="struct_onp.html">Onp</a>* pTail, <span class="keywordtype">bool</span> toClear, <span class="keywordtype">bool</span> toStop);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_functions_8h.html#a1aa3f363ae68da2b93b02657f998da6b">freeOnp</a>(<span class="keyword">struct</span> <a class="code" href="struct_onp.html">Onp</a>* pHead);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">// Stack functions</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">struct </span><a class="code" href="struct_pair.html">Pair</a>* <a class="code" href="_functions_8h.html#a38fb29c8c0101dbd3ac9ad2f2b7c85ff">stackAction</a>(<span class="keyword">struct</span> <a class="code" href="struct_stack.html">Stack</a>* head, <span class="keyword">struct</span> <a class="code" href="struct_onp.html">Onp</a>* tail, <span class="keyword">enum</span> <a class="code" href="_structures_8h.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a> type);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">struct </span><a class="code" href="struct_pair.html">Pair</a>* <a class="code" href="_functions_8h.html#a653a7225ce97844a298bc5a880ad974f">modyfyStack</a>(<span class="keyword">struct</span> <a class="code" href="struct_stack.html">Stack</a>* stack, <span class="keyword">struct</span> <a class="code" href="struct_onp.html">Onp</a>* onp, <span class="keyword">enum</span> <a class="code" href="_structures_8h.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a> type);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">struct </span><a class="code" href="struct_stack.html">Stack</a>* <a class="code" href="_functions_8h.html#a12e4a82fa69284dd2dbb2aebbbbf4dda">addToStack</a>(<span class="keyword">struct</span> <a class="code" href="struct_stack.html">Stack</a>* head, <span class="keyword">enum</span> <a class="code" href="_structures_8h.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a> <a class="code" href="struct_stack.html#a524c8a64b179c1b8bc30b21b25760ac0">type</a>, <span class="keywordtype">double</span> <a class="code" href="struct_stack.html#ac72b2bde22ef1358d4debc5f6c866e53">prioryty</a>);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">struct </span><a class="code" href="struct_stack.html">Stack</a>* <a class="code" href="_functions_8h.html#a7f7806debeef2ad983043b7052a9ba9a">removeFromStack</a>(<span class="keyword">struct</span> <a class="code" href="struct_stack.html">Stack</a>* pStack);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">// Calculates</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keywordtype">double</span> <a class="code" href="_functions_8h.html#a42570afcac5ff6667c4dd755c96407fe">calculator</a>(<span class="keyword">struct</span> <a class="code" href="struct_onp.html">Onp</a>* pHead);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keywordtype">double</span> <a class="code" href="_functions_8h.html#ab629fdfc299b41354cd780e9fd417a31">getMultiResult</a>(<span class="keyword">enum</span> <a class="code" href="_structures_8h.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a> <a class="code" href="struct_stack.html#a524c8a64b179c1b8bc30b21b25760ac0">type</a>, <span class="keywordtype">double</span> head, <span class="keywordtype">double</span> prev);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keywordtype">double</span> <a class="code" href="_functions_8h.html#a7356622e78d8e74603f886193fc2560d">getSingleResult</a>(<span class="keyword">enum</span> <a class="code" href="_structures_8h.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a> <a class="code" href="struct_stack.html#a524c8a64b179c1b8bc30b21b25760ac0">type</a>, <span class="keywordtype">double</span> head);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">// File functions</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_functions_8h.html#af17c11361e85f5d880e8f777f2cf2f6f">addResultToFile</a>(<span class="keywordtype">double</span> result);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_functions_8h.html#ab0a2c94667ddad8231cfd85919adeab0">addOnpToFile</a>(<span class="keyword">struct</span> <a class="code" href="struct_onp.html">Onp</a>* pHead);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#endif FUNCTIONS_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="astruct_stack_html_a524c8a64b179c1b8bc30b21b25760ac0"><div class="ttname"><a href="struct_stack.html#a524c8a64b179c1b8bc30b21b25760ac0">Stack::type</a></div><div class="ttdeci">enum Type type</div><div class="ttdef"><b>Definition:</b> Structures.h:31</div></div>
+<div class="ttc" id="a_functions_8h_html_a5d68478129b5d370844926679292d7b2"><div class="ttname"><a href="_functions_8h.html#a5d68478129b5d370844926679292d7b2">getOperation</a></div><div class="ttdeci">char * getOperation(enum Type type)</div><div class="ttdef"><b>Definition:</b> ConvertFunctions.c:54</div></div>
+<div class="ttc" id="astruct_onp_html_a524c8a64b179c1b8bc30b21b25760ac0"><div class="ttname"><a href="struct_onp.html#a524c8a64b179c1b8bc30b21b25760ac0">Onp::type</a></div><div class="ttdeci">enum Type type</div><div class="ttdoc">type of the operator in the equation</div><div class="ttdef"><b>Definition:</b> Structures.h:24</div></div>
+<div class="ttc" id="a_functions_8h_html_ad20c2cd759c26a6d892271f330a0ff0e"><div class="ttname"><a href="_functions_8h.html#ad20c2cd759c26a6d892271f330a0ff0e">getUserInput</a></div><div class="ttdeci">char * getUserInput()</div><div class="ttdef"><b>Definition:</b> UiFunctions.c:11</div></div>
+<div class="ttc" id="a_functions_8h_html_a7f7806debeef2ad983043b7052a9ba9a"><div class="ttname"><a href="_functions_8h.html#a7f7806debeef2ad983043b7052a9ba9a">removeFromStack</a></div><div class="ttdeci">struct Stack * removeFromStack(struct Stack *pStack)</div><div class="ttdef"><b>Definition:</b> StackFunctions.c:70</div></div>
+<div class="ttc" id="astruct_stack_html_ac72b2bde22ef1358d4debc5f6c866e53"><div class="ttname"><a href="struct_stack.html#ac72b2bde22ef1358d4debc5f6c866e53">Stack::prioryty</a></div><div class="ttdeci">double prioryty</div><div class="ttdef"><b>Definition:</b> Structures.h:30</div></div>
+<div class="ttc" id="a_functions_8h_html_ab629fdfc299b41354cd780e9fd417a31"><div class="ttname"><a href="_functions_8h.html#ab629fdfc299b41354cd780e9fd417a31">getMultiResult</a></div><div class="ttdeci">double getMultiResult(enum Type type, double head, double prev)</div><div class="ttdef"><b>Definition:</b> Calulator.c:41</div></div>
+<div class="ttc" id="a_functions_8h_html_a70adbc55a0c16718127c2f400f46495e"><div class="ttname"><a href="_functions_8h.html#a70adbc55a0c16718127c2f400f46495e">manual</a></div><div class="ttdeci">void manual()</div><div class="ttdef"><b>Definition:</b> UiFunctions.c:30</div></div>
+<div class="ttc" id="a_functions_8h_html_af17c11361e85f5d880e8f777f2cf2f6f"><div class="ttname"><a href="_functions_8h.html#af17c11361e85f5d880e8f777f2cf2f6f">addResultToFile</a></div><div class="ttdeci">void addResultToFile(double result)</div><div class="ttdef"><b>Definition:</b> FileFunctions.c:12</div></div>
+<div class="ttc" id="a_structures_8h_html_a1d1cfd8ffb84e947f82999c682b666a7afcd7df4b0a5d1b09723e22742d8a60a3"><div class="ttname"><a href="_structures_8h.html#a1d1cfd8ffb84e947f82999c682b666a7afcd7df4b0a5d1b09723e22742d8a60a3">number</a></div><div class="ttdeci">@ number</div><div class="ttdef"><b>Definition:</b> Structures.h:15</div></div>
+<div class="ttc" id="astruct_onp_html_aee90379adb0307effb138f4871edbc5c"><div class="ttname"><a href="struct_onp.html#aee90379adb0307effb138f4871edbc5c">Onp::value</a></div><div class="ttdeci">double value</div><div class="ttdoc">value of the number</div><div class="ttdef"><b>Definition:</b> Structures.h:23</div></div>
+<div class="ttc" id="a_structures_8h_html_a1d1cfd8ffb84e947f82999c682b666a7"><div class="ttname"><a href="_structures_8h.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a></div><div class="ttdeci">Type</div><div class="ttdef"><b>Definition:</b> Structures.h:13</div></div>
+<div class="ttc" id="a_functions_8h_html_a1aa3f363ae68da2b93b02657f998da6b"><div class="ttname"><a href="_functions_8h.html#a1aa3f363ae68da2b93b02657f998da6b">freeOnp</a></div><div class="ttdeci">void freeOnp(struct Onp *pHead)</div><div class="ttdef"><b>Definition:</b> OnpFunctions.c:135</div></div>
+<div class="ttc" id="a_functions_8h_html_a38fb29c8c0101dbd3ac9ad2f2b7c85ff"><div class="ttname"><a href="_functions_8h.html#a38fb29c8c0101dbd3ac9ad2f2b7c85ff">stackAction</a></div><div class="ttdeci">struct Pair * stackAction(struct Stack *head, struct Onp *tail, enum Type type)</div><div class="ttdef"><b>Definition:</b> StackFunctions.c:13</div></div>
+<div class="ttc" id="a_functions_8h_html_a7256e18b1853e5958a83bf869dc7c503"><div class="ttname"><a href="_functions_8h.html#a7256e18b1853e5958a83bf869dc7c503">findOnpHead</a></div><div class="ttdeci">struct Onp * findOnpHead(struct Onp *pTail)</div><div class="ttdef"><b>Definition:</b> OnpFunctions.c:102</div></div>
+<div class="ttc" id="astruct_onp_html"><div class="ttname"><a href="struct_onp.html">Onp</a></div><div class="ttdef"><b>Definition:</b> Structures.h:21</div></div>
+<div class="ttc" id="a_functions_8h_html_a42570afcac5ff6667c4dd755c96407fe"><div class="ttname"><a href="_functions_8h.html#a42570afcac5ff6667c4dd755c96407fe">calculator</a></div><div class="ttdeci">double calculator(struct Onp *pHead)</div><div class="ttdef"><b>Definition:</b> Calulator.c:12</div></div>
+<div class="ttc" id="a_functions_8h_html_a18e9186252836be9a4419817b163ac11"><div class="ttname"><a href="_functions_8h.html#a18e9186252836be9a4419817b163ac11">getType</a></div><div class="ttdeci">enum Type getType(char input)</div><div class="ttdef"><b>Definition:</b> ConvertFunctions.c:12</div></div>
+<div class="ttc" id="a_functions_8h_html_ab0a2c94667ddad8231cfd85919adeab0"><div class="ttname"><a href="_functions_8h.html#ab0a2c94667ddad8231cfd85919adeab0">addOnpToFile</a></div><div class="ttdeci">void addOnpToFile(struct Onp *pHead)</div><div class="ttdef"><b>Definition:</b> FileFunctions.c:21</div></div>
+<div class="ttc" id="astruct_stack_html"><div class="ttname"><a href="struct_stack.html">Stack</a></div><div class="ttdef"><b>Definition:</b> Structures.h:29</div></div>
+<div class="ttc" id="a_functions_8h_html_a8eb50677d53a8e741c0b65a2cb8b5e71"><div class="ttname"><a href="_functions_8h.html#a8eb50677d53a8e741c0b65a2cb8b5e71">charToDigit</a></div><div class="ttdeci">int charToDigit(char character)</div><div class="ttdef"><b>Definition:</b> ConvertFunctions.c:73</div></div>
+<div class="ttc" id="astruct_pair_html"><div class="ttname"><a href="struct_pair.html">Pair</a></div><div class="ttdef"><b>Definition:</b> Structures.h:35</div></div>
+<div class="ttc" id="a_functions_8h_html_a653a7225ce97844a298bc5a880ad974f"><div class="ttname"><a href="_functions_8h.html#a653a7225ce97844a298bc5a880ad974f">modyfyStack</a></div><div class="ttdeci">struct Pair * modyfyStack(struct Stack *stack, struct Onp *onp, enum Type type)</div><div class="ttdef"><b>Definition:</b> StackFunctions.c:49</div></div>
+<div class="ttc" id="a_functions_8h_html_a12e4a82fa69284dd2dbb2aebbbbf4dda"><div class="ttname"><a href="_functions_8h.html#a12e4a82fa69284dd2dbb2aebbbbf4dda">addToStack</a></div><div class="ttdeci">struct Stack * addToStack(struct Stack *head, enum Type type, double prioryty)</div><div class="ttdef"><b>Definition:</b> StackFunctions.c:61</div></div>
+<div class="ttc" id="a_functions_8h_html_a19a2c214f3d579e85c1a4d862f2c3900"><div class="ttname"><a href="_functions_8h.html#a19a2c214f3d579e85c1a4d862f2c3900">addToOnp</a></div><div class="ttdeci">struct Onp * addToOnp(struct Onp *tail, enum Type type, double value)</div><div class="ttdef"><b>Definition:</b> OnpFunctions.c:80</div></div>
+<div class="ttc" id="a_functions_8h_html_abe283f6439d58e519bc78bdd94939395"><div class="ttname"><a href="_functions_8h.html#abe283f6439d58e519bc78bdd94939395">getFraction</a></div><div class="ttdeci">double getFraction(double number)</div><div class="ttdef"><b>Definition:</b> ConvertFunctions.c:78</div></div>
+<div class="ttc" id="a_functions_8h_html_ac9e2ddd7666b80169b8d9a3f8419d8e7"><div class="ttname"><a href="_functions_8h.html#ac9e2ddd7666b80169b8d9a3f8419d8e7">getPriority</a></div><div class="ttdeci">int getPriority(enum Type type)</div><div class="ttdef"><b>Definition:</b> ConvertFunctions.c:35</div></div>
+<div class="ttc" id="a_functions_8h_html_a7356622e78d8e74603f886193fc2560d"><div class="ttname"><a href="_functions_8h.html#a7356622e78d8e74603f886193fc2560d">getSingleResult</a></div><div class="ttdeci">double getSingleResult(enum Type type, double head)</div><div class="ttdef"><b>Definition:</b> Calulator.c:53</div></div>
+<div class="ttc" id="a_functions_8h_html_a06d601a646f481e88b29d464f8b972be"><div class="ttname"><a href="_functions_8h.html#a06d601a646f481e88b29d464f8b972be">stateControl</a></div><div class="ttdeci">struct Onp * stateControl(struct Onp *pTail, bool toClear, bool toStop)</div><div class="ttdef"><b>Definition:</b> OnpFunctions.c:109</div></div>
+<div class="ttc" id="a_functions_8h_html_a377d8f0635f6388fa18c5c0e10305242"><div class="ttname"><a href="_functions_8h.html#a377d8f0635f6388fa18c5c0e10305242">onpBuilder</a></div><div class="ttdeci">struct Onp * onpBuilder(double result, char *input)</div><div class="ttdef"><b>Definition:</b> OnpFunctions.c:13</div></div>
+<div class="ttc" id="a_functions_8h_html_a08f6390f37552cd213545974c1138e21"><div class="ttname"><a href="_functions_8h.html#a08f6390f37552cd213545974c1138e21">printOnp</a></div><div class="ttdeci">void printOnp(struct Onp *pHead)</div><div class="ttdef"><b>Definition:</b> UiFunctions.c:18</div></div>
+<div class="ttc" id="a_functions_8h_html_add319689d7b76a1ba020ff38fe45fafd"><div class="ttname"><a href="_functions_8h.html#add319689d7b76a1ba020ff38fe45fafd">addToPair</a></div><div class="ttdeci">struct Onp * addToPair(struct Onp *pTail, struct Stack *pStack)</div><div class="ttdef"><b>Definition:</b> OnpFunctions.c:94</div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="_functions_8h.html">Functions.h</a></li>
+    <li class="footer">Wygenerowano przez
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
+</body>
+</html>
