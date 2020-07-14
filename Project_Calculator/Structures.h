@@ -9,17 +9,21 @@ typedef enum {
 	true
 } bool;
 
+
 enum Type
 {
 	number, dot, begin, end, plus, minus, mulipy, divide, power, percentage, sinus, cosinus, logarithm, negation, clear, done, unn
 };
 
+/**
+ * Stuktura danych reprezentuj¹ca równanie przedstawione w odwrotnej notacji polskiej.
+ */
 struct Onp
 {
-	double value;
-	enum Type type;
-	struct Onp* pPrev;
-	struct Onp* pNext;
+	double value;			///< value of the number
+	enum Type type;			///< type of the operator in the equation
+	struct Onp* pPrev;		///< pointer to the previous unit in the equation
+	struct Onp* pNext;		///< pointer to the next unit in the equation
 };
 
 struct Stack {

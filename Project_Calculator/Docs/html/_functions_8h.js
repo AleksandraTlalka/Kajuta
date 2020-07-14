@@ -1,0 +1,26 @@
+var _functions_8h =
+[
+    [ "addOnpToFile", "_functions_8h.html#ab0a2c94667ddad8231cfd85919adeab0", null ],
+    [ "addResultToFile", "_functions_8h.html#af17c11361e85f5d880e8f777f2cf2f6f", null ],
+    [ "addToOnp", "_functions_8h.html#a19a2c214f3d579e85c1a4d862f2c3900", null ],
+    [ "addToPair", "_functions_8h.html#add319689d7b76a1ba020ff38fe45fafd", null ],
+    [ "addToStack", "_functions_8h.html#a12e4a82fa69284dd2dbb2aebbbbf4dda", null ],
+    [ "calculator", "_functions_8h.html#a42570afcac5ff6667c4dd755c96407fe", null ],
+    [ "charToDigit", "_functions_8h.html#a8eb50677d53a8e741c0b65a2cb8b5e71", null ],
+    [ "findOnpHead", "_functions_8h.html#a7256e18b1853e5958a83bf869dc7c503", null ],
+    [ "freeOnp", "_functions_8h.html#a1aa3f363ae68da2b93b02657f998da6b", null ],
+    [ "getFraction", "_functions_8h.html#abe283f6439d58e519bc78bdd94939395", null ],
+    [ "getMultiResult", "_functions_8h.html#ab629fdfc299b41354cd780e9fd417a31", null ],
+    [ "getOperation", "_functions_8h.html#a5d68478129b5d370844926679292d7b2", null ],
+    [ "getPriority", "_functions_8h.html#ac9e2ddd7666b80169b8d9a3f8419d8e7", null ],
+    [ "getSingleResult", "_functions_8h.html#a7356622e78d8e74603f886193fc2560d", null ],
+    [ "getType", "_functions_8h.html#a18e9186252836be9a4419817b163ac11", null ],
+    [ "getUserInput", "_functions_8h.html#ad20c2cd759c26a6d892271f330a0ff0e", null ],
+    [ "manual", "_functions_8h.html#a70adbc55a0c16718127c2f400f46495e", null ],
+    [ "modyfyStack", "_functions_8h.html#a653a7225ce97844a298bc5a880ad974f", null ],
+    [ "onpBuilder", "_functions_8h.html#a377d8f0635f6388fa18c5c0e10305242", null ],
+    [ "printOnp", "_functions_8h.html#a08f6390f37552cd213545974c1138e21", null ],
+    [ "removeFromStack", "_functions_8h.html#a7f7806debeef2ad983043b7052a9ba9a", null ],
+    [ "stackAction", "_functions_8h.html#a38fb29c8c0101dbd3ac9ad2f2b7c85ff", null ],
+    [ "stateControl", "_functions_8h.html#a06d601a646f481e88b29d464f8b972be", null ]
+];
