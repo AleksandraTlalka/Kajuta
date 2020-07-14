@@ -36,13 +36,26 @@ struct Stack* addToStack(struct Stack* head, enum Type type, double prioryty);
 struct Stack* removeFromStack(struct Stack* pStack);
 
 
-// Calculates
+//--------------------------------------------------------------------------------------------------------------------
+// ---------------------------------------------------------------------------------------------------------Calculator
+
+
 double calculator(struct Onp* pHead);
 double getMultiResult(enum Type type, double head, double prev);
 double getSingleResult(enum Type type, double head);
 
-// File functions
+
+//--------------------------------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------------------File functions
+
+/** Funkcja zapisuje wynik równania do pliku
+@param result wynik rónania
+*/
 void addResultToFile(double result);
+
+/** Funkcja zapisuje kolejne elementu równania w odwrotnej notacji polskiej do pliku
+@param pHead wskaŸnik na pierszy element równania
+*/
 void addOnpToFile(struct Onp* pHead);
 
 #endif FUNCTIONS_H

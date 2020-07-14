@@ -5,7 +5,7 @@
 #include <stdlib.h>
 
 /**
- * prowizoryczny typ logiczny 
+ * Prowizoryczny typ logiczny 
  */
 typedef enum {
 	false,
