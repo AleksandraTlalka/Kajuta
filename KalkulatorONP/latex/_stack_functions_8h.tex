@@ -11,6 +11,8 @@ struct \mbox{\hyperlink{struct_pair}{Pair}} $\ast$ \mbox{\hyperlink{_stack_funct
 \item 
 struct \mbox{\hyperlink{struct_stack}{Stack}} $\ast$ \mbox{\hyperlink{_stack_functions_8h_a900e986d3cd9733d3d0d9efdedfa7f76}{add\+To\+Stack}} (struct \mbox{\hyperlink{struct_stack}{Stack}} $\ast$p\+Stack, enum \mbox{\hyperlink{_structures_8h_a1d1cfd8ffb84e947f82999c682b666a7}{Type}} type, double prioryty)
 \item 
+struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$ \mbox{\hyperlink{_stack_functions_8h_a746da0aed36940d4680f141a9eb7714a}{empty\+Stack}} (struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$p\+Tail, struct \mbox{\hyperlink{struct_stack}{Stack}} $\ast$p\+Stack)
+\item 
 struct \mbox{\hyperlink{struct_stack}{Stack}} $\ast$ \mbox{\hyperlink{_stack_functions_8h_a7f7806debeef2ad983043b7052a9ba9a}{remove\+From\+Stack}} (struct \mbox{\hyperlink{struct_stack}{Stack}} $\ast$p\+Stack)
 \end{DoxyCompactItemize}
 
@@ -33,6 +35,22 @@ Funkcja służy do dodawania znaku na początek stosu
 \end{DoxyParams}
 \begin{DoxyReturn}{Zwraca}
 adres pierwszego elementu stosu 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_stack_functions_8h_a746da0aed36940d4680f141a9eb7714a}\label{_stack_functions_8h_a746da0aed36940d4680f141a9eb7714a}} 
+\index{StackFunctions.h@{StackFunctions.h}!emptyStack@{emptyStack}}
+\index{emptyStack@{emptyStack}!StackFunctions.h@{StackFunctions.h}}
+\doxysubsubsection{\texorpdfstring{emptyStack()}{emptyStack()}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_onp}{Onp}}$\ast$ empty\+Stack (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$}]{p\+Tail,  }\item[{struct \mbox{\hyperlink{struct_stack}{Stack}} $\ast$}]{p\+Stack }\end{DoxyParamCaption})}
+
+Funkcja służy do przenoszenia znków, które pozostały na stosie po odczytaniu wszystkich wprowadzonych znaków, na koniec przekonwertowanego na O\+NP równania 
+\begin{DoxyParams}{Parametry}
+{\em p\+Tail} & adres ostatniego elementu przekonwertowanego na O\+NP równania \\
+\hline
+{\em p\+Stack} & adres pierwszego elementu stosu \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+nowy adres ostatniego elementu przekonwertowanego na O\+NP równania 
 \end{DoxyReturn}
 \mbox{\Hypertarget{_stack_functions_8h_a82f9d4d30cc7b36d6eccb517627e4be4}\label{_stack_functions_8h_a82f9d4d30cc7b36d6eccb517627e4be4}} 
 \index{StackFunctions.h@{StackFunctions.h}!modyfyStack@{modyfyStack}}
@@ -64,7 +82,7 @@ Funkcja służy do usuwania znaku z poczatku stosu
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Zwraca}
-adres pierwszego elementu stosu 
+adres aktualnego pierwszego elementu stosu po usunięciu poprzedniego 
 \end{DoxyReturn}
 \mbox{\Hypertarget{_stack_functions_8h_ac7d287f176dcaa3640dde7526567e873}\label{_stack_functions_8h_ac7d287f176dcaa3640dde7526567e873}} 
 \index{StackFunctions.h@{StackFunctions.h}!stackAction@{stackAction}}

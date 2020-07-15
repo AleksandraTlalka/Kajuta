@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['printonp_129',['printOnp',['../_functions_8h.html#a08f6390f37552cd213545974c1138e21',1,'printOnp(struct Onp *pHead):&#160;UiFunctions.c'],['../_ui_functions_8c.html#a08f6390f37552cd213545974c1138e21',1,'printOnp(struct Onp *pHead):&#160;UiFunctions.c'],['../_ui_functions_8h.html#a08f6390f37552cd213545974c1138e21',1,'printOnp(struct Onp *pHead):&#160;UiFunctions.c']]]
+  ['onpbuilder_128',['onpBuilder',['../_onp_functions_8c.html#aca33b4ca61f3b0e243bf2928c5ec3573',1,'onpBuilder(double result, char *input, bool rewrite):&#160;OnpFunctions.c'],['../_onp_functions_8h.html#aca33b4ca61f3b0e243bf2928c5ec3573',1,'onpBuilder(double result, char *input, bool rewrite):&#160;OnpFunctions.c']]]
 ];

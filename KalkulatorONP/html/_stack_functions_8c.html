@@ -112,6 +112,8 @@ Funkcje</h2></td></tr>
 <tr class="separator:a82f9d4d30cc7b36d6eccb517627e4be4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a900e986d3cd9733d3d0d9efdedfa7f76"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="struct_stack.html">Stack</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_stack_functions_8c.html#a900e986d3cd9733d3d0d9efdedfa7f76">addToStack</a> (struct <a class="el" href="struct_stack.html">Stack</a> *pStack, enum <a class="el" href="_structures_8h.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a> type, double prioryty)</td></tr>
 <tr class="separator:a900e986d3cd9733d3d0d9efdedfa7f76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a746da0aed36940d4680f141a9eb7714a"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="struct_onp.html">Onp</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_stack_functions_8c.html#a746da0aed36940d4680f141a9eb7714a">emptyStack</a> (struct <a class="el" href="struct_onp.html">Onp</a> *pTail, struct <a class="el" href="struct_stack.html">Stack</a> *pStack)</td></tr>
+<tr class="separator:a746da0aed36940d4680f141a9eb7714a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f7806debeef2ad983043b7052a9ba9a"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="struct_stack.html">Stack</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_stack_functions_8c.html#a7f7806debeef2ad983043b7052a9ba9a">removeFromStack</a> (struct <a class="el" href="struct_stack.html">Stack</a> *pStack)</td></tr>
 <tr class="separator:a7f7806debeef2ad983043b7052a9ba9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -171,6 +173,42 @@ Funkcje</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Zwraca</dt><dd>adres pierwszego elementu stosu </dd></dl>
+
+</div>
+</div>
+<a id="a746da0aed36940d4680f141a9eb7714a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a746da0aed36940d4680f141a9eb7714a">&#9670;&nbsp;</a></span>emptyStack()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="struct_onp.html">Onp</a>* emptyStack </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="struct_onp.html">Onp</a> *&#160;</td>
+          <td class="paramname"><em>pTail</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="struct_stack.html">Stack</a> *&#160;</td>
+          <td class="paramname"><em>pStack</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Funkcja służy do przenoszenia znków, które pozostały na stosie po odczytaniu wszystkich wprowadzonych znaków, na koniec przekonwertowanego na ONP równania </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pTail</td><td>adres ostatniego elementu przekonwertowanego na ONP równania </td></tr>
+    <tr><td class="paramname">pStack</td><td>adres pierwszego elementu stosu </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>nowy adres ostatniego elementu przekonwertowanego na ONP równania </dd></dl>
 
 </div>
 </div>
@@ -238,7 +276,7 @@ Funkcje</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Zwraca</dt><dd>adres pierwszego elementu stosu </dd></dl>
+<dl class="section return"><dt>Zwraca</dt><dd>adres aktualnego pierwszego elementu stosu po usunięciu poprzedniego </dd></dl>
 
 </div>
 </div>

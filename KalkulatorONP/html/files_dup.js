@@ -8,7 +8,6 @@ var files_dup =
     [ "ConvertFunctions.h", "_convert_functions_8h.html", "_convert_functions_8h" ],
     [ "FileFunctions.c", "_file_functions_8c.html", "_file_functions_8c" ],
     [ "FileFunctions.h", "_file_functions_8h.html", "_file_functions_8h" ],
-    [ "Functions.h", "_functions_8h.html", "_functions_8h" ],
     [ "Main.c", "_main_8c.html", "_main_8c" ],
     [ "OnpFunctions.c", "_onp_functions_8c.html", "_onp_functions_8c" ],
     [ "OnpFunctions.h", "_onp_functions_8h.html", "_onp_functions_8h" ],
