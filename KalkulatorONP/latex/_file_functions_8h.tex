@@ -1,0 +1,52 @@
+\hypertarget{_file_functions_8h}{}\doxysection{Dokumentacja pliku File\+Functions.\+h}
+\label{_file_functions_8h}\index{FileFunctions.h@{FileFunctions.h}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+\doxysubsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \mbox{\hyperlink{_file_functions_8h_a490ac1be3aa1dee47a75a4a144b7a925}{read\+File}} (char $\ast$argv1)
+\item 
+void \mbox{\hyperlink{_file_functions_8h_af17c11361e85f5d880e8f777f2cf2f6f}{add\+Result\+To\+File}} (double result)
+\item 
+void \mbox{\hyperlink{_file_functions_8h_ab0a2c94667ddad8231cfd85919adeab0}{add\+Onp\+To\+File}} (struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$p\+Head)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Dokumentacja funkcji}
+\mbox{\Hypertarget{_file_functions_8h_ab0a2c94667ddad8231cfd85919adeab0}\label{_file_functions_8h_ab0a2c94667ddad8231cfd85919adeab0}} 
+\index{FileFunctions.h@{FileFunctions.h}!addOnpToFile@{addOnpToFile}}
+\index{addOnpToFile@{addOnpToFile}!FileFunctions.h@{FileFunctions.h}}
+\doxysubsubsection{\texorpdfstring{addOnpToFile()}{addOnpToFile()}}
+{\footnotesize\ttfamily void add\+Onp\+To\+File (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$}]{p\+Head }\end{DoxyParamCaption})}
+
+Funkcja zapisuje kolejne elementu równania w odwrotnej notacji polskiej do pliku 
+\begin{DoxyParams}{Parametry}
+{\em p\+Head} & wskaźnik na pierszy element równania \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_file_functions_8h_af17c11361e85f5d880e8f777f2cf2f6f}\label{_file_functions_8h_af17c11361e85f5d880e8f777f2cf2f6f}} 
+\index{FileFunctions.h@{FileFunctions.h}!addResultToFile@{addResultToFile}}
+\index{addResultToFile@{addResultToFile}!FileFunctions.h@{FileFunctions.h}}
+\doxysubsubsection{\texorpdfstring{addResultToFile()}{addResultToFile()}}
+{\footnotesize\ttfamily void add\+Result\+To\+File (\begin{DoxyParamCaption}\item[{double}]{result }\end{DoxyParamCaption})}
+
+Funkcja zapisuje wynik równania do pliku 
+\begin{DoxyParams}{Parametry}
+{\em result} & wynik rónania \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_file_functions_8h_a490ac1be3aa1dee47a75a4a144b7a925}\label{_file_functions_8h_a490ac1be3aa1dee47a75a4a144b7a925}} 
+\index{FileFunctions.h@{FileFunctions.h}!readFile@{readFile}}
+\index{readFile@{readFile}!FileFunctions.h@{FileFunctions.h}}
+\doxysubsubsection{\texorpdfstring{readFile()}{readFile()}}
+{\footnotesize\ttfamily char$\ast$ read\+File (\begin{DoxyParamCaption}\item[{char $\ast$}]{argv1 }\end{DoxyParamCaption})}
+
+Funkcja odczytuje równanie podane w pliku (podanym z lini poleceń) 
+\begin{DoxyParams}{Parametry}
+{\em argv1} & adres nazwy pliku do odczytu \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+równanie podne w pliku 
+\end{DoxyReturn}

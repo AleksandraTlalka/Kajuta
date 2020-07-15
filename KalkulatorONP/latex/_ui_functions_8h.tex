@@ -1,0 +1,71 @@
+\hypertarget{_ui_functions_8h}{}\doxysection{Dokumentacja pliku Ui\+Functions.\+h}
+\label{_ui_functions_8h}\index{UiFunctions.h@{UiFunctions.h}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+\doxysubsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \mbox{\hyperlink{_ui_functions_8h_a084fdbf39c5e2cd543f14f24f18de5fc}{get\+User\+Choice}} (char $\ast$argv)
+\item 
+char $\ast$ \mbox{\hyperlink{_ui_functions_8h_ad20c2cd759c26a6d892271f330a0ff0e}{get\+User\+Input}} ()
+\item 
+void \mbox{\hyperlink{_ui_functions_8h_a08f6390f37552cd213545974c1138e21}{print\+Onp}} (struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$p\+Head)
+\item 
+void \mbox{\hyperlink{_ui_functions_8h_a70adbc55a0c16718127c2f400f46495e}{manual}} ()
+\item 
+void \mbox{\hyperlink{_ui_functions_8h_ad42db24f4faaf69510f6acea4af4e9ed}{divide\+By\+Zero}} (char $\ast$input)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Dokumentacja funkcji}
+\mbox{\Hypertarget{_ui_functions_8h_ad42db24f4faaf69510f6acea4af4e9ed}\label{_ui_functions_8h_ad42db24f4faaf69510f6acea4af4e9ed}} 
+\index{UiFunctions.h@{UiFunctions.h}!divideByZero@{divideByZero}}
+\index{divideByZero@{divideByZero}!UiFunctions.h@{UiFunctions.h}}
+\doxysubsubsection{\texorpdfstring{divideByZero()}{divideByZero()}}
+{\footnotesize\ttfamily void divide\+By\+Zero (\begin{DoxyParamCaption}\item[{char $\ast$}]{input }\end{DoxyParamCaption})}
+
+Funkcja sprawdza czy użytkownik próbuje dzielć przez 0 
+\begin{DoxyParams}{Parametry}
+{\em input} & podane równanie \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_ui_functions_8h_a084fdbf39c5e2cd543f14f24f18de5fc}\label{_ui_functions_8h_a084fdbf39c5e2cd543f14f24f18de5fc}} 
+\index{UiFunctions.h@{UiFunctions.h}!getUserChoice@{getUserChoice}}
+\index{getUserChoice@{getUserChoice}!UiFunctions.h@{UiFunctions.h}}
+\doxysubsubsection{\texorpdfstring{getUserChoice()}{getUserChoice()}}
+{\footnotesize\ttfamily char$\ast$ get\+User\+Choice (\begin{DoxyParamCaption}\item[{char $\ast$}]{argv }\end{DoxyParamCaption})}
+
+Funkcja otrzymuje od użytkownika informację czy w wierszu linii poleceń podał nazwę pliku czy równanie 
+\begin{DoxyParams}{Parametry}
+{\em argv} & adres łańcucha znaków (otrzymanego równania lub nazwy pliku) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+otrzymane od użytkownika lub z pliku równanie 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_ui_functions_8h_ad20c2cd759c26a6d892271f330a0ff0e}\label{_ui_functions_8h_ad20c2cd759c26a6d892271f330a0ff0e}} 
+\index{UiFunctions.h@{UiFunctions.h}!getUserInput@{getUserInput}}
+\index{getUserInput@{getUserInput}!UiFunctions.h@{UiFunctions.h}}
+\doxysubsubsection{\texorpdfstring{getUserInput()}{getUserInput()}}
+{\footnotesize\ttfamily char$\ast$ get\+User\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Funkcja otrzymuje równanie od użytkownika. \begin{DoxyReturn}{Zwraca}
+adres łańcucha znaków (otrzymanego równania) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_ui_functions_8h_a70adbc55a0c16718127c2f400f46495e}\label{_ui_functions_8h_a70adbc55a0c16718127c2f400f46495e}} 
+\index{UiFunctions.h@{UiFunctions.h}!manual@{manual}}
+\index{manual@{manual}!UiFunctions.h@{UiFunctions.h}}
+\doxysubsubsection{\texorpdfstring{manual()}{manual()}}
+{\footnotesize\ttfamily void manual (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Funkcja wyświetla instrukcję dla użytkownika \mbox{\Hypertarget{_ui_functions_8h_a08f6390f37552cd213545974c1138e21}\label{_ui_functions_8h_a08f6390f37552cd213545974c1138e21}} 
+\index{UiFunctions.h@{UiFunctions.h}!printOnp@{printOnp}}
+\index{printOnp@{printOnp}!UiFunctions.h@{UiFunctions.h}}
+\doxysubsubsection{\texorpdfstring{printOnp()}{printOnp()}}
+{\footnotesize\ttfamily void print\+Onp (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$}]{p\+Head }\end{DoxyParamCaption})}
+
+Funkcja wyświetla równanie przekonwertowane na odwrotną notacje polską 
+\begin{DoxyParams}{Parametry}
+{\em p\+Head} & wskaźnik pierwszy element przekonwertowanego równania \\
+\hline
+\end{DoxyParams}

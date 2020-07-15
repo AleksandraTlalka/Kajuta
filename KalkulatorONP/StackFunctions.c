@@ -68,6 +68,14 @@ struct Stack* addToStack(struct Stack* pStack, enum Type type, double prioryty)
 	return node;
 }
 
+struct Onp* emptyStack(struct Onp* pTail, struct Stack* pStack) {
+	while (pStack != NULL) {
+		pTail = addToOnp(pTail, pStack->type, UNDEFINED);
+		pStack = removeFromStack(pStack);
+	}
+	return pTail;
+}
+
 struct Stack* removeFromStack(struct Stack* pStack) {
 	struct Stack* tmp = NULL;
 	tmp = pStack->pPrev;

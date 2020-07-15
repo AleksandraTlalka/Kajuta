@@ -1,0 +1,99 @@
+\hypertarget{_calculator_8c}{}\doxysection{Dokumentacja pliku Calculator.\+c}
+\label{_calculator_8c}\index{Calculator.c@{Calculator.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}Constans.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Structures.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Convert\+Functions.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Stack\+Functions.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Calculator.\+h\char`\"{}}\newline
+\doxysubsection*{Definicje}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_calculator_8c_a411c46599e926f8cdf49c63957255359}{\+\_\+\+C\+R\+T\+\_\+\+S\+E\+C\+U\+R\+E\+\_\+\+N\+O\+\_\+\+D\+E\+P\+R\+E\+C\+A\+TE}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{_calculator_8c_a42570afcac5ff6667c4dd755c96407fe}{calculator}} (struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$p\+Head)
+\item 
+double \mbox{\hyperlink{_calculator_8c_ab629fdfc299b41354cd780e9fd417a31}{get\+Multi\+Result}} (enum \mbox{\hyperlink{_structures_8h_a1d1cfd8ffb84e947f82999c682b666a7}{Type}} type, double head, double prev)
+\item 
+double \mbox{\hyperlink{_calculator_8c_a7356622e78d8e74603f886193fc2560d}{get\+Single\+Result}} (enum \mbox{\hyperlink{_structures_8h_a1d1cfd8ffb84e947f82999c682b666a7}{Type}} type, double head)
+\item 
+void \mbox{\hyperlink{_calculator_8c_a57763a402e9db8c16c9421ae99d98cde}{Free\+Memory}} (struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$p\+Head, char $\ast$input)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Dokumentacja definicji}
+\mbox{\Hypertarget{_calculator_8c_a411c46599e926f8cdf49c63957255359}\label{_calculator_8c_a411c46599e926f8cdf49c63957255359}} 
+\index{Calculator.c@{Calculator.c}!\_CRT\_SECURE\_NO\_DEPRECATE@{\_CRT\_SECURE\_NO\_DEPRECATE}}
+\index{\_CRT\_SECURE\_NO\_DEPRECATE@{\_CRT\_SECURE\_NO\_DEPRECATE}!Calculator.c@{Calculator.c}}
+\doxysubsubsection{\texorpdfstring{\_CRT\_SECURE\_NO\_DEPRECATE}{\_CRT\_SECURE\_NO\_DEPRECATE}}
+{\footnotesize\ttfamily \#define \+\_\+\+C\+R\+T\+\_\+\+S\+E\+C\+U\+R\+E\+\_\+\+N\+O\+\_\+\+D\+E\+P\+R\+E\+C\+A\+TE}
+
+
+
+\doxysubsection{Dokumentacja funkcji}
+\mbox{\Hypertarget{_calculator_8c_a42570afcac5ff6667c4dd755c96407fe}\label{_calculator_8c_a42570afcac5ff6667c4dd755c96407fe}} 
+\index{Calculator.c@{Calculator.c}!calculator@{calculator}}
+\index{calculator@{calculator}!Calculator.c@{Calculator.c}}
+\doxysubsubsection{\texorpdfstring{calculator()}{calculator()}}
+{\footnotesize\ttfamily double calculator (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$}]{p\+Head }\end{DoxyParamCaption})}
+
+Funkcja służy do obliczania wyniku równania przekonwertowanego na O\+NP 
+\begin{DoxyParams}{Parametry}
+{\em p\+Head} & adres pierwszego elementu listy jednokierunkowej przekonwertowanego na O\+NP równania \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+wynik równania 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_calculator_8c_a57763a402e9db8c16c9421ae99d98cde}\label{_calculator_8c_a57763a402e9db8c16c9421ae99d98cde}} 
+\index{Calculator.c@{Calculator.c}!FreeMemory@{FreeMemory}}
+\index{FreeMemory@{FreeMemory}!Calculator.c@{Calculator.c}}
+\doxysubsubsection{\texorpdfstring{FreeMemory()}{FreeMemory()}}
+{\footnotesize\ttfamily void Free\+Memory (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$}]{p\+Head,  }\item[{char $\ast$}]{input }\end{DoxyParamCaption})}
+
+Funkcja zwalnia pamięć po wykonaniu wszystkich operacji 
+\begin{DoxyParams}{Parametry}
+{\em p\+Head} & adres pierwszego elementu listy jednokierunkowej przekonwertowanego na O\+NP równania \\
+\hline
+{\em input} & adres łańcucha znaków zawierającego otrzymane od użytkownika równanie \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_calculator_8c_ab629fdfc299b41354cd780e9fd417a31}\label{_calculator_8c_ab629fdfc299b41354cd780e9fd417a31}} 
+\index{Calculator.c@{Calculator.c}!getMultiResult@{getMultiResult}}
+\index{getMultiResult@{getMultiResult}!Calculator.c@{Calculator.c}}
+\doxysubsubsection{\texorpdfstring{getMultiResult()}{getMultiResult()}}
+{\footnotesize\ttfamily double get\+Multi\+Result (\begin{DoxyParamCaption}\item[{enum \mbox{\hyperlink{_structures_8h_a1d1cfd8ffb84e947f82999c682b666a7}{Type}}}]{type,  }\item[{double}]{head,  }\item[{double}]{prev }\end{DoxyParamCaption})}
+
+Funkcja służy do obliczania wyniku pojedyńczej operacji składającej sie z dwóch liczb i operatora dwuelementowego 
+\begin{DoxyParams}{Parametry}
+{\em type} & typ operatora dwuelementowego \\
+\hline
+{\em head} & pierwsza liczba (bliższa pierwszego elementu stosu -\/ znaku) \\
+\hline
+{\em prev} & druga liczba (liczba poprzedzajaca pierwszą) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+wynik operacji 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_calculator_8c_a7356622e78d8e74603f886193fc2560d}\label{_calculator_8c_a7356622e78d8e74603f886193fc2560d}} 
+\index{Calculator.c@{Calculator.c}!getSingleResult@{getSingleResult}}
+\index{getSingleResult@{getSingleResult}!Calculator.c@{Calculator.c}}
+\doxysubsubsection{\texorpdfstring{getSingleResult()}{getSingleResult()}}
+{\footnotesize\ttfamily double get\+Single\+Result (\begin{DoxyParamCaption}\item[{enum \mbox{\hyperlink{_structures_8h_a1d1cfd8ffb84e947f82999c682b666a7}{Type}}}]{type,  }\item[{double}]{head }\end{DoxyParamCaption})}
+
+Funkcja służy do obliczania wyniku pojedyńczej operacji składającej sie z liczby i operatora jednoelementowego 
+\begin{DoxyParams}{Parametry}
+{\em type} & typ operatora jednoelementowego \\
+\hline
+{\em head} & liczba najbliższa pierwszego elementu stosu -\/ znaku \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+wynik operacji 
+\end{DoxyReturn}

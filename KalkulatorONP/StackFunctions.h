@@ -29,9 +29,16 @@ struct Pair* modyfyStack(struct Stack* pStack, struct Onp* pTail, enum Type type
 */
 struct Stack* addToStack(struct Stack* pStack, enum Type type, double prioryty);
 
+/**Funkcja s³u¿y do przenoszenia znków, które pozosta³y na stosie po odczytaniu wszystkich wprowadzonych znaków, na koniec przekonwertowanego na ONP równania
+@param pTail adres ostatniego elementu przekonwertowanego na ONP równania
+@param pStack adres pierwszego elementu stosu
+@return nowy adres ostatniego elementu przekonwertowanego na ONP równania
+*/
+struct Onp* emptyStack(struct Onp* pTail, struct Stack* pStack);
+
 /**Funkcja s³u¿y do usuwania znaku z poczatku stosu
 @param pStack adres pierwszego elementu stosu
-@return adres pierwszego elementu stosu
+@return adres aktualnego pierwszego elementu stosu po usuniêciu poprzedniego
 */
 struct Stack* removeFromStack(struct Stack* pStack);
 

@@ -16,7 +16,6 @@ struct Onp* onpBuilder(double result, char* input, bool rewrite) {
 	struct Onp* pTail = NULL;
 	struct Stack* stack = NULL;
 	struct Pair* pair = NULL;
-
 	enum Type type = number;
 	int numberIndex = 0;
 	bool toStop = false;
@@ -41,7 +40,6 @@ struct Onp* onpBuilder(double result, char* input, bool rewrite) {
 			numberIndex = 0;
 			if (!isspace(input[i])) {
 				type = getType(input[i]);
-
 				if (type == unn || type == clear) {
 					toClear = setState(type);
 					break;
@@ -61,11 +59,7 @@ struct Onp* onpBuilder(double result, char* input, bool rewrite) {
 			}
 		}
 	}
-
-	while (stack != NULL) {
-		pTail = addToOnp(pTail, stack->type, UNDEFINED);
-		stack = removeFromStack(stack);
-	}
+	pTail = emptyStack(pTail, stack);
 	return stateControl(pTail, toClear, toStop);
 }
 
@@ -97,6 +91,8 @@ struct Onp* findOnpHead(struct Onp* pTail) {
 	}
 	return pTail;
 }
+
+
 
 bool setState(enum Type type) {
 	if (type == unn) {
