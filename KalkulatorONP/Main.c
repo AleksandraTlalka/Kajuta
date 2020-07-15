@@ -15,13 +15,14 @@ int main(int argc, char* argv[]) {
 	char* input;
 	double result = 0;
 	bool started = false;
+	bool rewrite = false;
 
 	manual();
 	if (argv[1] == NULL) {
 		input = getUserInput();
 	}
 	else {
-		input = _strdup(argv[1]);
+		input = getUserChoice(argv[1]);
 		printf("\n Entered exuation: %s\n", input);
 	}
 
@@ -31,7 +32,8 @@ int main(int argc, char* argv[]) {
 		}
 		started = true;
 
-		struct Onp* pHead = onpBuilder(result, input);
+		struct Onp* pHead = onpBuilder(result, input, rewrite);
+		rewrite = true;
 
 		if (pHead->type == done) {
 			freeOnp(pHead);
@@ -41,7 +43,7 @@ int main(int argc, char* argv[]) {
 		}
 		else if (pHead->type == clear) {
 			manual();
-			result = 0;
+			rewrite = false;
 		}
 		else {
 			printOnp(pHead);

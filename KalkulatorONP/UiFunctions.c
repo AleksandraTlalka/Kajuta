@@ -2,16 +2,29 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 #include "Constans.h"
 #include "Structures.h"
 #include "Functions.h"
 
 
+char* getUserChoice(char* argv) {
+	char* input;
+	printf("\n If you just entered the flie name press F, if else please press any other button\n");
+	if (getc(stdin) == 'F') {
+		input = readFile(argv);
+	}
+	else {
+		input = _strdup(argv);
+	}
+	return input;
+}
+
 char* getUserInput() {
 	char input[INPUT_SIZE];
+	fseek(stdin, 0, SEEK_END);
 	gets(input);
-
 	return _strdup(input);
 }
 
@@ -32,5 +45,5 @@ void manual() {
 	printf("1. Calcutaror allows commands: '+','-','^','*','/','N'(negation),'ln','sin','cos' and decimal floating-point numbers\n");
 	printf("3. To clear already existing numbers and commands press 'C'\n");
 	printf("3. To exit calculator press 'E'\n");
-	printf("\nEnter the equation\n");
+	printf("\nEnter the exuation\n");
 }

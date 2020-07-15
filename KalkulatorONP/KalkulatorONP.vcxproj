@@ -149,6 +149,7 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="history.txt" />
+    <Text Include="Test.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Constans.h" />

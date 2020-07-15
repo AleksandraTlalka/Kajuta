@@ -10,7 +10,7 @@
 #include "Functions.h"
 
 
-struct Onp* onpBuilder(double result, char* input) {
+struct Onp* onpBuilder(double result, char* input, bool rewrite) {
 	struct Onp* pTail = NULL;
 	struct Stack* stack = NULL;
 	struct Pair* pair = NULL;
@@ -20,7 +20,7 @@ struct Onp* onpBuilder(double result, char* input) {
 	bool toStop = false;
 	bool toClear = false;
 
-	if (result != 0) {
+	if (rewrite) {
 		pTail = addToOnp(pTail, number, result);
 		numberIndex++;
 	}

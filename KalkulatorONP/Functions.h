@@ -8,6 +8,11 @@
 
 //--------------------------------------------------------------------------------------------------------------------
 // -------------------------------------------------------------------------------------------------------UI Functions
+/**Funkcja otrzymuje od u¿ytkownika informacjê czy w wierszu linii poleceñ poda³ nazwê pliku czy równanie 
+@param argv adres ³añcucha znaków (otrzymanego równania lub nazwy pliku)
+@return otrzymane od u¿ytkownika lub z pliku równanie
+*/
+char* getUserChoice(char* argv);
 
 /**Funkcja otrzymuje równanie od u¿ytkownika.
 @return adres ³añcucha znaków (otrzymanego równania)
@@ -63,9 +68,10 @@ double getFraction(double number);
 /**Funkcja s³u¿y do przekonwertowania równania ze standardowej notacji do odwrotnej notacji polskiej 
 @param result wynik poprzedniego równania
 @param input adres ³añcucha znaków zawieraj¹cego otrzymane od urzytkownika równanie
+@param rewrite warunek przepisania wyniku poprzedniego równania do nowego
 @return adres pierwszego elementu przekonwertowanego na ONP równania
 */
-struct Onp* onpBuilder(double result, char* input);
+struct Onp* onpBuilder(double result, char* input, bool rewrite);
 
 /**Funkcja s³u¿y do dodawania liczby lub znaku do przekonwertowanego na ONP równania
 @param tail adres ostatniego elementu przekonwertowanego na ONP równania
@@ -163,6 +169,12 @@ double getSingleResult(enum Type type, double head);
 
 //--------------------------------------------------------------------------------------------------------------------
 // -----------------------------------------------------------------------------------------------------File functions
+
+/** Funkcja odczytuje równanie podane w pliku (podanym z lini poleceñ)
+@param argv1 adres nazwy pliku do odczytu
+@return równanie podne w pliku
+*/
+char* readFile(char* argv1);
 
 /** Funkcja zapisuje wynik równania do pliku
 @param result wynik rónania

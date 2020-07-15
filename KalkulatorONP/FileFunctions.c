@@ -9,6 +9,27 @@
 #include "Functions.h"
 
 
+char* readFile(char* argv1) {
+	char input[INPUT_SIZE];
+	char name[INPUT_SIZE];
+	int i = 0;
+	char c;
+	
+	strcpy(name, argv1);
+	FILE* plik = fopen(name, "r");
+	if (plik)
+	{
+		fgets(input,100,plik);
+		fclose(plik);
+		return _strdup(input);
+	}
+	else {
+		printf("Error: Can't find the file. Please enter the exuation manualy\n");
+		return getUserInput();
+	}
+}
+
+
 void addResultToFile(double result) {
 	FILE* plik = fopen("history.txt", "a");
 	if (plik)
