@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['onp_45',['Onp',['../struct_onp.html',1,'']]],
-  ['onpbuilder_46',['onpBuilder',['../_functions_8h.html#a377d8f0635f6388fa18c5c0e10305242',1,'onpBuilder(double result, char *input):&#160;OnpFunctions.c'],['../_onp_functions_8c.html#a377d8f0635f6388fa18c5c0e10305242',1,'onpBuilder(double result, char *input):&#160;OnpFunctions.c']]],
-  ['onpfunctions_2ec_47',['OnpFunctions.c',['../_onp_functions_8c.html',1,'']]]
+  ['onp_48',['Onp',['../struct_onp.html',1,'']]],
+  ['onpbuilder_49',['onpBuilder',['../_functions_8h.html#aca33b4ca61f3b0e243bf2928c5ec3573',1,'onpBuilder(double result, char *input, bool rewrite):&#160;OnpFunctions.c'],['../_onp_functions_8c.html#aca33b4ca61f3b0e243bf2928c5ec3573',1,'onpBuilder(double result, char *input, bool rewrite):&#160;OnpFunctions.c']]],
+  ['onpfunctions_2ec_50',['OnpFunctions.c',['../_onp_functions_8c.html',1,'']]]
 ];

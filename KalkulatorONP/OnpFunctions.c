@@ -7,7 +7,9 @@
 
 #include "Constans.h"
 #include "Structures.h"
-#include "Functions.h"
+#include "ConvertFunctions.h"
+#include "StackFunctions.h"
+#include "OnpFunctions.h"
 
 
 struct Onp* onpBuilder(double result, char* input, bool rewrite) {

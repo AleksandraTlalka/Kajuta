@@ -42,27 +42,67 @@ double \mbox{\hyperlink{_convert_functions_8c_abe283f6439d58e519bc78bdd94939395}
 \doxysubsubsection{\texorpdfstring{charToDigit()}{charToDigit()}}
 {\footnotesize\ttfamily int char\+To\+Digit (\begin{DoxyParamCaption}\item[{char}]{character }\end{DoxyParamCaption})}
 
+Funkcja zamienia cyfrę zapisaną jako znak typu char na jej wartość typu int 
+\begin{DoxyParams}{Parametry}
+{\em character} & cyfra zapisaną jako znak \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+wartość tej liczby 
+\end{DoxyReturn}
 \mbox{\Hypertarget{_convert_functions_8c_abe283f6439d58e519bc78bdd94939395}\label{_convert_functions_8c_abe283f6439d58e519bc78bdd94939395}} 
 \index{ConvertFunctions.c@{ConvertFunctions.c}!getFraction@{getFraction}}
 \index{getFraction@{getFraction}!ConvertFunctions.c@{ConvertFunctions.c}}
 \doxysubsubsection{\texorpdfstring{getFraction()}{getFraction()}}
 {\footnotesize\ttfamily double get\+Fraction (\begin{DoxyParamCaption}\item[{double}]{number }\end{DoxyParamCaption})}
 
+Funkcja służy do tworzenia części ułamkowej liczby zmiennoprzecinkowej 
+\begin{DoxyParams}{Parametry}
+{\em number} & licznba występująca po znku \textquotesingle{}.\textquotesingle{} lub \textquotesingle{},\textquotesingle{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+ułamek dziesiętny 
+\end{DoxyReturn}
 \mbox{\Hypertarget{_convert_functions_8c_a5d68478129b5d370844926679292d7b2}\label{_convert_functions_8c_a5d68478129b5d370844926679292d7b2}} 
 \index{ConvertFunctions.c@{ConvertFunctions.c}!getOperation@{getOperation}}
 \index{getOperation@{getOperation}!ConvertFunctions.c@{ConvertFunctions.c}}
 \doxysubsubsection{\texorpdfstring{getOperation()}{getOperation()}}
 {\footnotesize\ttfamily char$\ast$ get\+Operation (\begin{DoxyParamCaption}\item[{enum \mbox{\hyperlink{_structures_8h_a1d1cfd8ffb84e947f82999c682b666a7}{Type}}}]{type }\end{DoxyParamCaption})}
 
+Funkcja zwraca oznaczenie danego typu znaku do wypisania na ekran lub do pliku 
+\begin{DoxyParams}{Parametry}
+{\em type} & typ znaku \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+oznaczenie danego typu znaku 
+\end{DoxyReturn}
 \mbox{\Hypertarget{_convert_functions_8c_ac9e2ddd7666b80169b8d9a3f8419d8e7}\label{_convert_functions_8c_ac9e2ddd7666b80169b8d9a3f8419d8e7}} 
 \index{ConvertFunctions.c@{ConvertFunctions.c}!getPriority@{getPriority}}
 \index{getPriority@{getPriority}!ConvertFunctions.c@{ConvertFunctions.c}}
 \doxysubsubsection{\texorpdfstring{getPriority()}{getPriority()}}
 {\footnotesize\ttfamily int get\+Priority (\begin{DoxyParamCaption}\item[{enum \mbox{\hyperlink{_structures_8h_a1d1cfd8ffb84e947f82999c682b666a7}{Type}}}]{type }\end{DoxyParamCaption})}
 
+Funkcja zwraca priorytet podanego typu znaku 
+\begin{DoxyParams}{Parametry}
+{\em type} & typ znaku \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+prorytet przypisany danemu znakowi 
+\end{DoxyReturn}
 \mbox{\Hypertarget{_convert_functions_8c_a18e9186252836be9a4419817b163ac11}\label{_convert_functions_8c_a18e9186252836be9a4419817b163ac11}} 
 \index{ConvertFunctions.c@{ConvertFunctions.c}!getType@{getType}}
 \index{getType@{getType}!ConvertFunctions.c@{ConvertFunctions.c}}
 \doxysubsubsection{\texorpdfstring{getType()}{getType()}}
 {\footnotesize\ttfamily enum \mbox{\hyperlink{_structures_8h_a1d1cfd8ffb84e947f82999c682b666a7}{Type}} get\+Type (\begin{DoxyParamCaption}\item[{char}]{input }\end{DoxyParamCaption})}
 
+Funkcja zwraca typ podanego znaku 
+\begin{DoxyParams}{Parametry}
+{\em input} & pojedyńczy znak równania \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+typ tego znaku 
+\end{DoxyReturn}

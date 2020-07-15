@@ -20,7 +20,7 @@ struct \mbox{\hyperlink{struct_pair}{Pair}} $\ast$ \mbox{\hyperlink{_stack_funct
 \item 
 struct \mbox{\hyperlink{struct_pair}{Pair}} $\ast$ \mbox{\hyperlink{_stack_functions_8c_a82f9d4d30cc7b36d6eccb517627e4be4}{modyfy\+Stack}} (struct \mbox{\hyperlink{struct_stack}{Stack}} $\ast$p\+Stack, struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$p\+Tail, enum \mbox{\hyperlink{_structures_8h_a1d1cfd8ffb84e947f82999c682b666a7}{Type}} type)
 \item 
-struct \mbox{\hyperlink{struct_stack}{Stack}} $\ast$ \mbox{\hyperlink{_stack_functions_8c_a12e4a82fa69284dd2dbb2aebbbbf4dda}{add\+To\+Stack}} (struct \mbox{\hyperlink{struct_stack}{Stack}} $\ast$head, enum \mbox{\hyperlink{_structures_8h_a1d1cfd8ffb84e947f82999c682b666a7}{Type}} type, double prioryty)
+struct \mbox{\hyperlink{struct_stack}{Stack}} $\ast$ \mbox{\hyperlink{_stack_functions_8c_a900e986d3cd9733d3d0d9efdedfa7f76}{add\+To\+Stack}} (struct \mbox{\hyperlink{struct_stack}{Stack}} $\ast$p\+Stack, enum \mbox{\hyperlink{_structures_8h_a1d1cfd8ffb84e947f82999c682b666a7}{Type}} type, double prioryty)
 \item 
 struct \mbox{\hyperlink{struct_stack}{Stack}} $\ast$ \mbox{\hyperlink{_stack_functions_8c_a7f7806debeef2ad983043b7052a9ba9a}{remove\+From\+Stack}} (struct \mbox{\hyperlink{struct_stack}{Stack}} $\ast$p\+Stack)
 \end{DoxyCompactItemize}
@@ -36,27 +36,71 @@ struct \mbox{\hyperlink{struct_stack}{Stack}} $\ast$ \mbox{\hyperlink{_stack_fun
 
 
 \doxysubsection{Dokumentacja funkcji}
-\mbox{\Hypertarget{_stack_functions_8c_a12e4a82fa69284dd2dbb2aebbbbf4dda}\label{_stack_functions_8c_a12e4a82fa69284dd2dbb2aebbbbf4dda}} 
+\mbox{\Hypertarget{_stack_functions_8c_a900e986d3cd9733d3d0d9efdedfa7f76}\label{_stack_functions_8c_a900e986d3cd9733d3d0d9efdedfa7f76}} 
 \index{StackFunctions.c@{StackFunctions.c}!addToStack@{addToStack}}
 \index{addToStack@{addToStack}!StackFunctions.c@{StackFunctions.c}}
 \doxysubsubsection{\texorpdfstring{addToStack()}{addToStack()}}
-{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_stack}{Stack}}$\ast$ add\+To\+Stack (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_stack}{Stack}} $\ast$}]{head,  }\item[{enum \mbox{\hyperlink{_structures_8h_a1d1cfd8ffb84e947f82999c682b666a7}{Type}}}]{type,  }\item[{double}]{prioryty }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_stack}{Stack}}$\ast$ add\+To\+Stack (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_stack}{Stack}} $\ast$}]{p\+Stack,  }\item[{enum \mbox{\hyperlink{_structures_8h_a1d1cfd8ffb84e947f82999c682b666a7}{Type}}}]{type,  }\item[{double}]{prioryty }\end{DoxyParamCaption})}
 
+Funkcja służy do dodawania znaku na początek stosu 
+\begin{DoxyParams}{Parametry}
+{\em p\+Stack} & adres pierwszego elementu stosu \\
+\hline
+{\em type} & typ dodawanego znaku \\
+\hline
+{\em prioryty} & prorytet przypisany dodawemu znakowi \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+adres pierwszego elementu stosu 
+\end{DoxyReturn}
 \mbox{\Hypertarget{_stack_functions_8c_a82f9d4d30cc7b36d6eccb517627e4be4}\label{_stack_functions_8c_a82f9d4d30cc7b36d6eccb517627e4be4}} 
 \index{StackFunctions.c@{StackFunctions.c}!modyfyStack@{modyfyStack}}
 \index{modyfyStack@{modyfyStack}!StackFunctions.c@{StackFunctions.c}}
 \doxysubsubsection{\texorpdfstring{modyfyStack()}{modyfyStack()}}
 {\footnotesize\ttfamily struct \mbox{\hyperlink{struct_pair}{Pair}}$\ast$ modyfy\+Stack (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_stack}{Stack}} $\ast$}]{p\+Stack,  }\item[{struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$}]{p\+Tail,  }\item[{enum \mbox{\hyperlink{_structures_8h_a1d1cfd8ffb84e947f82999c682b666a7}{Type}}}]{type }\end{DoxyParamCaption})}
 
+Funkcja skupia w sobie usuwanie danych ze stosu, dodawnie ich do przekonwertowanego na O\+NP równania oraz dodawanie nowych danych na stos 
+\begin{DoxyParams}{Parametry}
+{\em p\+Stack} & adres pierwszego elementu stosu \\
+\hline
+{\em p\+Tail} & adres ostatniego elementu przekonwertowanego na O\+NP równania \\
+\hline
+{\em type} & typ danego znaku lub liczby \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+adres aktualnej struktury \mbox{\hyperlink{struct_pair}{Pair}} 
+\end{DoxyReturn}
 \mbox{\Hypertarget{_stack_functions_8c_a7f7806debeef2ad983043b7052a9ba9a}\label{_stack_functions_8c_a7f7806debeef2ad983043b7052a9ba9a}} 
 \index{StackFunctions.c@{StackFunctions.c}!removeFromStack@{removeFromStack}}
 \index{removeFromStack@{removeFromStack}!StackFunctions.c@{StackFunctions.c}}
 \doxysubsubsection{\texorpdfstring{removeFromStack()}{removeFromStack()}}
 {\footnotesize\ttfamily struct \mbox{\hyperlink{struct_stack}{Stack}}$\ast$ remove\+From\+Stack (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_stack}{Stack}} $\ast$}]{p\+Stack }\end{DoxyParamCaption})}
 
+Funkcja służy do usuwania znaku z poczatku stosu 
+\begin{DoxyParams}{Parametry}
+{\em p\+Stack} & adres pierwszego elementu stosu \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+adres pierwszego elementu stosu 
+\end{DoxyReturn}
 \mbox{\Hypertarget{_stack_functions_8c_ac7d287f176dcaa3640dde7526567e873}\label{_stack_functions_8c_ac7d287f176dcaa3640dde7526567e873}} 
 \index{StackFunctions.c@{StackFunctions.c}!stackAction@{stackAction}}
 \index{stackAction@{stackAction}!StackFunctions.c@{StackFunctions.c}}
 \doxysubsubsection{\texorpdfstring{stackAction()}{stackAction()}}
 {\footnotesize\ttfamily struct \mbox{\hyperlink{struct_pair}{Pair}}$\ast$ stack\+Action (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_stack}{Stack}} $\ast$}]{p\+Stack,  }\item[{struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$}]{p\+Tail,  }\item[{enum \mbox{\hyperlink{_structures_8h_a1d1cfd8ffb84e947f82999c682b666a7}{Type}}}]{type }\end{DoxyParamCaption})}
 
+Funkcja skupia w sobie wszystkie operacje związane ze stosem dla danego typu znaku (dokładniej opisane w innych funkcjach) 
+\begin{DoxyParams}{Parametry}
+{\em p\+Stack} & adres pierwszego elementu stosu \\
+\hline
+{\em p\+Tail} & adres ostatniego elementu przekonwertowanego na O\+NP równania \\
+\hline
+{\em type} & typ danego znaku lub liczby \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+adres aktualnej struktury \mbox{\hyperlink{struct_pair}{Pair}} 
+\end{DoxyReturn}

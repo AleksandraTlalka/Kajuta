@@ -8,7 +8,12 @@
 
 #include "Constans.h"
 #include "Structures.h"
-#include "Functions.h"
+#include "FileFunctions.h"
+#include "UiFunctions.h"
+#include "ConvertFunctions.h"
+#include "StackFunctions.h"
+#include "OnpFunctions.h"
+#include "Calculator.h"
 
 
 int main(int argc, char* argv[]) {

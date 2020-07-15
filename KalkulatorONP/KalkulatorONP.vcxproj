@@ -139,7 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Calulator.c" />
+    <ClCompile Include="Calculator.c" />
     <ClCompile Include="ConvertFunctions.c" />
     <ClCompile Include="FileFunctions.c" />
     <ClCompile Include="Main.c" />
@@ -152,9 +152,14 @@
     <Text Include="Test.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Calculator.h" />
     <ClInclude Include="Constans.h" />
-    <ClInclude Include="Functions.h" />
+    <ClInclude Include="ConvertFunctions.h" />
+    <ClInclude Include="FileFunctions.h" />
+    <ClInclude Include="OnpFunctions.h" />
+    <ClInclude Include="StackFunctions.h" />
     <ClInclude Include="Structures.h" />
+    <ClInclude Include="UiFunctions.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

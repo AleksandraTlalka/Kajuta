@@ -5,11 +5,15 @@
 \doxysubsection*{Funkcje}
 \begin{DoxyCompactItemize}
 \item 
+char $\ast$ \mbox{\hyperlink{_functions_8h_a084fdbf39c5e2cd543f14f24f18de5fc}{get\+User\+Choice}} (char $\ast$argv)
+\item 
 char $\ast$ \mbox{\hyperlink{_functions_8h_ad20c2cd759c26a6d892271f330a0ff0e}{get\+User\+Input}} ()
 \item 
 void \mbox{\hyperlink{_functions_8h_a08f6390f37552cd213545974c1138e21}{print\+Onp}} (struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$p\+Head)
 \item 
 void \mbox{\hyperlink{_functions_8h_a70adbc55a0c16718127c2f400f46495e}{manual}} ()
+\item 
+void \mbox{\hyperlink{_functions_8h_ad42db24f4faaf69510f6acea4af4e9ed}{divide\+By\+Zero}} (char $\ast$input)
 \item 
 enum \mbox{\hyperlink{_structures_8h_a1d1cfd8ffb84e947f82999c682b666a7}{Type}} \mbox{\hyperlink{_functions_8h_a18e9186252836be9a4419817b163ac11}{get\+Type}} (char input)
 \item 
@@ -21,23 +25,25 @@ int \mbox{\hyperlink{_functions_8h_a8eb50677d53a8e741c0b65a2cb8b5e71}{char\+To\+
 \item 
 double \mbox{\hyperlink{_functions_8h_abe283f6439d58e519bc78bdd94939395}{get\+Fraction}} (double \mbox{\hyperlink{_structures_8h_a1d1cfd8ffb84e947f82999c682b666a7afcd7df4b0a5d1b09723e22742d8a60a3}{number}})
 \item 
-struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$ \mbox{\hyperlink{_functions_8h_a377d8f0635f6388fa18c5c0e10305242}{onp\+Builder}} (double result, char $\ast$input)
+struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$ \mbox{\hyperlink{_functions_8h_aca33b4ca61f3b0e243bf2928c5ec3573}{onp\+Builder}} (double result, char $\ast$input, \mbox{\hyperlink{_structures_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} rewrite)
 \item 
 struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$ \mbox{\hyperlink{_functions_8h_a19a2c214f3d579e85c1a4d862f2c3900}{add\+To\+Onp}} (struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$tail, enum \mbox{\hyperlink{_structures_8h_a1d1cfd8ffb84e947f82999c682b666a7}{Type}} type, double value)
 \item 
-struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$ \mbox{\hyperlink{_functions_8h_add319689d7b76a1ba020ff38fe45fafd}{add\+To\+Pair}} (struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$p\+Tail, struct \mbox{\hyperlink{struct_stack}{Stack}} $\ast$p\+Stack)
+struct \mbox{\hyperlink{struct_pair}{Pair}} $\ast$ \mbox{\hyperlink{_functions_8h_ac74f19eec2415bd64c5addc8008171cf}{add\+To\+Pair}} (struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$p\+Tail, struct \mbox{\hyperlink{struct_stack}{Stack}} $\ast$p\+Stack)
 \item 
 struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$ \mbox{\hyperlink{_functions_8h_a7256e18b1853e5958a83bf869dc7c503}{find\+Onp\+Head}} (struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$p\+Tail)
+\item 
+\mbox{\hyperlink{_structures_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} \mbox{\hyperlink{_functions_8h_ada1f2576b2bb67ee99a3d0d1679ec3b8}{set\+State}} (enum \mbox{\hyperlink{_structures_8h_a1d1cfd8ffb84e947f82999c682b666a7}{Type}} type)
 \item 
 struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$ \mbox{\hyperlink{_functions_8h_a06d601a646f481e88b29d464f8b972be}{state\+Control}} (struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$p\+Tail, \mbox{\hyperlink{_structures_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} to\+Clear, \mbox{\hyperlink{_structures_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} to\+Stop)
 \item 
 void \mbox{\hyperlink{_functions_8h_a1aa3f363ae68da2b93b02657f998da6b}{free\+Onp}} (struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$p\+Head)
 \item 
-struct \mbox{\hyperlink{struct_pair}{Pair}} $\ast$ \mbox{\hyperlink{_functions_8h_a38fb29c8c0101dbd3ac9ad2f2b7c85ff}{stack\+Action}} (struct \mbox{\hyperlink{struct_stack}{Stack}} $\ast$head, struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$tail, enum \mbox{\hyperlink{_structures_8h_a1d1cfd8ffb84e947f82999c682b666a7}{Type}} type)
+struct \mbox{\hyperlink{struct_pair}{Pair}} $\ast$ \mbox{\hyperlink{_functions_8h_ac7d287f176dcaa3640dde7526567e873}{stack\+Action}} (struct \mbox{\hyperlink{struct_stack}{Stack}} $\ast$p\+Stack, struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$p\+Tail, enum \mbox{\hyperlink{_structures_8h_a1d1cfd8ffb84e947f82999c682b666a7}{Type}} type)
 \item 
-struct \mbox{\hyperlink{struct_pair}{Pair}} $\ast$ \mbox{\hyperlink{_functions_8h_a653a7225ce97844a298bc5a880ad974f}{modyfy\+Stack}} (struct \mbox{\hyperlink{struct_stack}{Stack}} $\ast$stack, struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$onp, enum \mbox{\hyperlink{_structures_8h_a1d1cfd8ffb84e947f82999c682b666a7}{Type}} type)
+struct \mbox{\hyperlink{struct_pair}{Pair}} $\ast$ \mbox{\hyperlink{_functions_8h_a82f9d4d30cc7b36d6eccb517627e4be4}{modyfy\+Stack}} (struct \mbox{\hyperlink{struct_stack}{Stack}} $\ast$p\+Stack, struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$p\+Tail, enum \mbox{\hyperlink{_structures_8h_a1d1cfd8ffb84e947f82999c682b666a7}{Type}} type)
 \item 
-struct \mbox{\hyperlink{struct_stack}{Stack}} $\ast$ \mbox{\hyperlink{_functions_8h_a12e4a82fa69284dd2dbb2aebbbbf4dda}{add\+To\+Stack}} (struct \mbox{\hyperlink{struct_stack}{Stack}} $\ast$head, enum \mbox{\hyperlink{_structures_8h_a1d1cfd8ffb84e947f82999c682b666a7}{Type}} type, double prioryty)
+struct \mbox{\hyperlink{struct_stack}{Stack}} $\ast$ \mbox{\hyperlink{_functions_8h_a900e986d3cd9733d3d0d9efdedfa7f76}{add\+To\+Stack}} (struct \mbox{\hyperlink{struct_stack}{Stack}} $\ast$p\+Stack, enum \mbox{\hyperlink{_structures_8h_a1d1cfd8ffb84e947f82999c682b666a7}{Type}} type, double prioryty)
 \item 
 struct \mbox{\hyperlink{struct_stack}{Stack}} $\ast$ \mbox{\hyperlink{_functions_8h_a7f7806debeef2ad983043b7052a9ba9a}{remove\+From\+Stack}} (struct \mbox{\hyperlink{struct_stack}{Stack}} $\ast$p\+Stack)
 \item 
@@ -46,6 +52,10 @@ double \mbox{\hyperlink{_functions_8h_a42570afcac5ff6667c4dd755c96407fe}{calcula
 double \mbox{\hyperlink{_functions_8h_ab629fdfc299b41354cd780e9fd417a31}{get\+Multi\+Result}} (enum \mbox{\hyperlink{_structures_8h_a1d1cfd8ffb84e947f82999c682b666a7}{Type}} type, double head, double prev)
 \item 
 double \mbox{\hyperlink{_functions_8h_a7356622e78d8e74603f886193fc2560d}{get\+Single\+Result}} (enum \mbox{\hyperlink{_structures_8h_a1d1cfd8ffb84e947f82999c682b666a7}{Type}} type, double head)
+\item 
+void \mbox{\hyperlink{_functions_8h_a57763a402e9db8c16c9421ae99d98cde}{Free\+Memory}} (struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$p\+Head, char $\ast$input)
+\item 
+char $\ast$ \mbox{\hyperlink{_functions_8h_a490ac1be3aa1dee47a75a4a144b7a925}{read\+File}} (char $\ast$argv1)
 \item 
 void \mbox{\hyperlink{_functions_8h_af17c11361e85f5d880e8f777f2cf2f6f}{add\+Result\+To\+File}} (double result)
 \item 
@@ -82,123 +92,370 @@ Funkcja zapisuje wynik równania do pliku
 \doxysubsubsection{\texorpdfstring{addToOnp()}{addToOnp()}}
 {\footnotesize\ttfamily struct \mbox{\hyperlink{struct_onp}{Onp}}$\ast$ add\+To\+Onp (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$}]{tail,  }\item[{enum \mbox{\hyperlink{_structures_8h_a1d1cfd8ffb84e947f82999c682b666a7}{Type}}}]{type,  }\item[{double}]{value }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{_functions_8h_add319689d7b76a1ba020ff38fe45fafd}\label{_functions_8h_add319689d7b76a1ba020ff38fe45fafd}} 
+Funkcja służy do dodawania liczby lub znaku do przekonwertowanego na O\+NP równania 
+\begin{DoxyParams}{Parametry}
+{\em tail} & adres ostatniego elementu przekonwertowanego na O\+NP równania \\
+\hline
+{\em type} & typ dodawnaego znaku lub liczby \\
+\hline
+{\em value} & wartość dodawanego znaku lub liczby \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+adres ostatniego elementu przekonwertowanego na O\+NP równania 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_functions_8h_ac74f19eec2415bd64c5addc8008171cf}\label{_functions_8h_ac74f19eec2415bd64c5addc8008171cf}} 
 \index{Functions.h@{Functions.h}!addToPair@{addToPair}}
 \index{addToPair@{addToPair}!Functions.h@{Functions.h}}
 \doxysubsubsection{\texorpdfstring{addToPair()}{addToPair()}}
-{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_onp}{Onp}}$\ast$ add\+To\+Pair (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$}]{p\+Tail,  }\item[{struct \mbox{\hyperlink{struct_stack}{Stack}} $\ast$}]{p\+Stack }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_pair}{Pair}}$\ast$ add\+To\+Pair (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$}]{p\+Tail,  }\item[{struct \mbox{\hyperlink{struct_stack}{Stack}} $\ast$}]{p\+Stack }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{_functions_8h_a12e4a82fa69284dd2dbb2aebbbbf4dda}\label{_functions_8h_a12e4a82fa69284dd2dbb2aebbbbf4dda}} 
+Funkcja służy uaktualniania stanu ostatniego elementu przekonwertowanego na O\+NP równania i stosu 
+\begin{DoxyParams}{Parametry}
+{\em p\+Tail} & adres ostatniego elementu przekonwertowanego na O\+NP równania \\
+\hline
+{\em p\+Stack} & adres pierwszego elementu stosu \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+adres aktualnej struktury \mbox{\hyperlink{struct_pair}{Pair}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_functions_8h_a900e986d3cd9733d3d0d9efdedfa7f76}\label{_functions_8h_a900e986d3cd9733d3d0d9efdedfa7f76}} 
 \index{Functions.h@{Functions.h}!addToStack@{addToStack}}
 \index{addToStack@{addToStack}!Functions.h@{Functions.h}}
 \doxysubsubsection{\texorpdfstring{addToStack()}{addToStack()}}
-{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_stack}{Stack}}$\ast$ add\+To\+Stack (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_stack}{Stack}} $\ast$}]{head,  }\item[{enum \mbox{\hyperlink{_structures_8h_a1d1cfd8ffb84e947f82999c682b666a7}{Type}}}]{type,  }\item[{double}]{prioryty }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_stack}{Stack}}$\ast$ add\+To\+Stack (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_stack}{Stack}} $\ast$}]{p\+Stack,  }\item[{enum \mbox{\hyperlink{_structures_8h_a1d1cfd8ffb84e947f82999c682b666a7}{Type}}}]{type,  }\item[{double}]{prioryty }\end{DoxyParamCaption})}
 
+Funkcja służy do dodawania znaku na początek stosu 
+\begin{DoxyParams}{Parametry}
+{\em p\+Stack} & adres pierwszego elementu stosu \\
+\hline
+{\em type} & typ dodawanego znaku \\
+\hline
+{\em prioryty} & prorytet przypisany dodawemu znakowi \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+adres pierwszego elementu stosu 
+\end{DoxyReturn}
 \mbox{\Hypertarget{_functions_8h_a42570afcac5ff6667c4dd755c96407fe}\label{_functions_8h_a42570afcac5ff6667c4dd755c96407fe}} 
 \index{Functions.h@{Functions.h}!calculator@{calculator}}
 \index{calculator@{calculator}!Functions.h@{Functions.h}}
 \doxysubsubsection{\texorpdfstring{calculator()}{calculator()}}
 {\footnotesize\ttfamily double calculator (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$}]{p\+Head }\end{DoxyParamCaption})}
 
+Funkcja służy do obliczania wyniku równania przekonwertowanego na O\+NP 
+\begin{DoxyParams}{Parametry}
+{\em p\+Head} & adres pierwszego elementu listy jednokierunkowej przekonwertowanego na O\+NP równania \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+wynik równania 
+\end{DoxyReturn}
 \mbox{\Hypertarget{_functions_8h_a8eb50677d53a8e741c0b65a2cb8b5e71}\label{_functions_8h_a8eb50677d53a8e741c0b65a2cb8b5e71}} 
 \index{Functions.h@{Functions.h}!charToDigit@{charToDigit}}
 \index{charToDigit@{charToDigit}!Functions.h@{Functions.h}}
 \doxysubsubsection{\texorpdfstring{charToDigit()}{charToDigit()}}
 {\footnotesize\ttfamily int char\+To\+Digit (\begin{DoxyParamCaption}\item[{char}]{character }\end{DoxyParamCaption})}
 
+Funkcja zamienia cyfrę zapisaną jako znak typu char na jej wartość typu int 
+\begin{DoxyParams}{Parametry}
+{\em character} & cyfra zapisaną jako znak \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+wartość tej liczby 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_functions_8h_ad42db24f4faaf69510f6acea4af4e9ed}\label{_functions_8h_ad42db24f4faaf69510f6acea4af4e9ed}} 
+\index{Functions.h@{Functions.h}!divideByZero@{divideByZero}}
+\index{divideByZero@{divideByZero}!Functions.h@{Functions.h}}
+\doxysubsubsection{\texorpdfstring{divideByZero()}{divideByZero()}}
+{\footnotesize\ttfamily void divide\+By\+Zero (\begin{DoxyParamCaption}\item[{char $\ast$}]{input }\end{DoxyParamCaption})}
+
+Funkcja sprawdza czy użytkownik próbuje dzielć przez 0 
+\begin{DoxyParams}{Parametry}
+{\em input} & podane równanie \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{_functions_8h_a7256e18b1853e5958a83bf869dc7c503}\label{_functions_8h_a7256e18b1853e5958a83bf869dc7c503}} 
 \index{Functions.h@{Functions.h}!findOnpHead@{findOnpHead}}
 \index{findOnpHead@{findOnpHead}!Functions.h@{Functions.h}}
 \doxysubsubsection{\texorpdfstring{findOnpHead()}{findOnpHead()}}
 {\footnotesize\ttfamily struct \mbox{\hyperlink{struct_onp}{Onp}}$\ast$ find\+Onp\+Head (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$}]{p\+Tail }\end{DoxyParamCaption})}
 
+Funkcja znajduje pierwszy element listy jednokierunkowej 
+\begin{DoxyParams}{Parametry}
+{\em p\+Tail} & adres ostatniego elementu przekonwertowanego na O\+NP równania \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+adres pierwszego elementu przekonwertowanego na O\+NP równania 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_functions_8h_a57763a402e9db8c16c9421ae99d98cde}\label{_functions_8h_a57763a402e9db8c16c9421ae99d98cde}} 
+\index{Functions.h@{Functions.h}!FreeMemory@{FreeMemory}}
+\index{FreeMemory@{FreeMemory}!Functions.h@{Functions.h}}
+\doxysubsubsection{\texorpdfstring{FreeMemory()}{FreeMemory()}}
+{\footnotesize\ttfamily void Free\+Memory (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$}]{p\+Head,  }\item[{char $\ast$}]{input }\end{DoxyParamCaption})}
+
+Funkcja zwalnia pamięć po wykonaniu wszystkich operacji 
+\begin{DoxyParams}{Parametry}
+{\em p\+Head} & adres pierwszego elementu listy jednokierunkowej przekonwertowanego na O\+NP równania \\
+\hline
+{\em input} & adres łańcucha znaków zawierającego otrzymane od użytkownika równanie \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{_functions_8h_a1aa3f363ae68da2b93b02657f998da6b}\label{_functions_8h_a1aa3f363ae68da2b93b02657f998da6b}} 
 \index{Functions.h@{Functions.h}!freeOnp@{freeOnp}}
 \index{freeOnp@{freeOnp}!Functions.h@{Functions.h}}
 \doxysubsubsection{\texorpdfstring{freeOnp()}{freeOnp()}}
 {\footnotesize\ttfamily void free\+Onp (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$}]{p\+Head }\end{DoxyParamCaption})}
 
+Funkcja usuwa od początku listę jednokierunkową przekonwertowanego na O\+NP równania 
+\begin{DoxyParams}{Parametry}
+{\em p\+Head} & wskaźnik na pierwszy element listy – po usunięciu listy jest równy nullptr. \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{_functions_8h_abe283f6439d58e519bc78bdd94939395}\label{_functions_8h_abe283f6439d58e519bc78bdd94939395}} 
 \index{Functions.h@{Functions.h}!getFraction@{getFraction}}
 \index{getFraction@{getFraction}!Functions.h@{Functions.h}}
 \doxysubsubsection{\texorpdfstring{getFraction()}{getFraction()}}
 {\footnotesize\ttfamily double get\+Fraction (\begin{DoxyParamCaption}\item[{double}]{number }\end{DoxyParamCaption})}
 
+Funkcja służy do tworzenia części ułamkowej liczby zmiennoprzecinkowej 
+\begin{DoxyParams}{Parametry}
+{\em number} & licznba występująca po znku \textquotesingle{}.\textquotesingle{} lub \textquotesingle{},\textquotesingle{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+ułamek dziesiętny 
+\end{DoxyReturn}
 \mbox{\Hypertarget{_functions_8h_ab629fdfc299b41354cd780e9fd417a31}\label{_functions_8h_ab629fdfc299b41354cd780e9fd417a31}} 
 \index{Functions.h@{Functions.h}!getMultiResult@{getMultiResult}}
 \index{getMultiResult@{getMultiResult}!Functions.h@{Functions.h}}
 \doxysubsubsection{\texorpdfstring{getMultiResult()}{getMultiResult()}}
 {\footnotesize\ttfamily double get\+Multi\+Result (\begin{DoxyParamCaption}\item[{enum \mbox{\hyperlink{_structures_8h_a1d1cfd8ffb84e947f82999c682b666a7}{Type}}}]{type,  }\item[{double}]{head,  }\item[{double}]{prev }\end{DoxyParamCaption})}
 
+Funkcja służy do obliczania wyniku pojedyńczej operacji składającej sie z dwóch liczb i operatora dwuelementowego 
+\begin{DoxyParams}{Parametry}
+{\em type} & typ operatora dwuelementowego \\
+\hline
+{\em head} & pierwsza liczba (bliższa pierwszego elementu stosu -\/ znaku) \\
+\hline
+{\em prev} & druga liczba (liczba poprzedzajaca pierwszą) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+wynik operacji 
+\end{DoxyReturn}
 \mbox{\Hypertarget{_functions_8h_a5d68478129b5d370844926679292d7b2}\label{_functions_8h_a5d68478129b5d370844926679292d7b2}} 
 \index{Functions.h@{Functions.h}!getOperation@{getOperation}}
 \index{getOperation@{getOperation}!Functions.h@{Functions.h}}
 \doxysubsubsection{\texorpdfstring{getOperation()}{getOperation()}}
 {\footnotesize\ttfamily char$\ast$ get\+Operation (\begin{DoxyParamCaption}\item[{enum \mbox{\hyperlink{_structures_8h_a1d1cfd8ffb84e947f82999c682b666a7}{Type}}}]{type }\end{DoxyParamCaption})}
 
+Funkcja zwraca oznaczenie danego typu znaku do wypisania na ekran lub do pliku 
+\begin{DoxyParams}{Parametry}
+{\em type} & typ znaku \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+oznaczenie danego typu znaku 
+\end{DoxyReturn}
 \mbox{\Hypertarget{_functions_8h_ac9e2ddd7666b80169b8d9a3f8419d8e7}\label{_functions_8h_ac9e2ddd7666b80169b8d9a3f8419d8e7}} 
 \index{Functions.h@{Functions.h}!getPriority@{getPriority}}
 \index{getPriority@{getPriority}!Functions.h@{Functions.h}}
 \doxysubsubsection{\texorpdfstring{getPriority()}{getPriority()}}
 {\footnotesize\ttfamily int get\+Priority (\begin{DoxyParamCaption}\item[{enum \mbox{\hyperlink{_structures_8h_a1d1cfd8ffb84e947f82999c682b666a7}{Type}}}]{type }\end{DoxyParamCaption})}
 
+Funkcja zwraca priorytet podanego typu znaku 
+\begin{DoxyParams}{Parametry}
+{\em type} & typ znaku \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+prorytet przypisany danemu znakowi 
+\end{DoxyReturn}
 \mbox{\Hypertarget{_functions_8h_a7356622e78d8e74603f886193fc2560d}\label{_functions_8h_a7356622e78d8e74603f886193fc2560d}} 
 \index{Functions.h@{Functions.h}!getSingleResult@{getSingleResult}}
 \index{getSingleResult@{getSingleResult}!Functions.h@{Functions.h}}
 \doxysubsubsection{\texorpdfstring{getSingleResult()}{getSingleResult()}}
 {\footnotesize\ttfamily double get\+Single\+Result (\begin{DoxyParamCaption}\item[{enum \mbox{\hyperlink{_structures_8h_a1d1cfd8ffb84e947f82999c682b666a7}{Type}}}]{type,  }\item[{double}]{head }\end{DoxyParamCaption})}
 
+Funkcja służy do obliczania wyniku pojedyńczej operacji składającej sie z liczby i operatora jednoelementowego 
+\begin{DoxyParams}{Parametry}
+{\em type} & typ operatora jednoelementowego \\
+\hline
+{\em head} & liczba najbliższa pierwszego elementu stosu -\/ znaku \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+wynik operacji 
+\end{DoxyReturn}
 \mbox{\Hypertarget{_functions_8h_a18e9186252836be9a4419817b163ac11}\label{_functions_8h_a18e9186252836be9a4419817b163ac11}} 
 \index{Functions.h@{Functions.h}!getType@{getType}}
 \index{getType@{getType}!Functions.h@{Functions.h}}
 \doxysubsubsection{\texorpdfstring{getType()}{getType()}}
 {\footnotesize\ttfamily enum \mbox{\hyperlink{_structures_8h_a1d1cfd8ffb84e947f82999c682b666a7}{Type}} get\+Type (\begin{DoxyParamCaption}\item[{char}]{input }\end{DoxyParamCaption})}
 
+Funkcja zwraca typ podanego znaku 
+\begin{DoxyParams}{Parametry}
+{\em input} & pojedyńczy znak równania \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+typ tego znaku 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_functions_8h_a084fdbf39c5e2cd543f14f24f18de5fc}\label{_functions_8h_a084fdbf39c5e2cd543f14f24f18de5fc}} 
+\index{Functions.h@{Functions.h}!getUserChoice@{getUserChoice}}
+\index{getUserChoice@{getUserChoice}!Functions.h@{Functions.h}}
+\doxysubsubsection{\texorpdfstring{getUserChoice()}{getUserChoice()}}
+{\footnotesize\ttfamily char$\ast$ get\+User\+Choice (\begin{DoxyParamCaption}\item[{char $\ast$}]{argv }\end{DoxyParamCaption})}
+
+Funkcja otrzymuje od użytkownika informację czy w wierszu linii poleceń podał nazwę pliku czy równanie 
+\begin{DoxyParams}{Parametry}
+{\em argv} & adres łańcucha znaków (otrzymanego równania lub nazwy pliku) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+otrzymane od użytkownika lub z pliku równanie 
+\end{DoxyReturn}
 \mbox{\Hypertarget{_functions_8h_ad20c2cd759c26a6d892271f330a0ff0e}\label{_functions_8h_ad20c2cd759c26a6d892271f330a0ff0e}} 
 \index{Functions.h@{Functions.h}!getUserInput@{getUserInput}}
 \index{getUserInput@{getUserInput}!Functions.h@{Functions.h}}
 \doxysubsubsection{\texorpdfstring{getUserInput()}{getUserInput()}}
 {\footnotesize\ttfamily char$\ast$ get\+User\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+Funkcja otrzymuje równanie od użytkownika. \begin{DoxyReturn}{Zwraca}
+adres łańcucha znaków (otrzymanego równania) 
+\end{DoxyReturn}
 \mbox{\Hypertarget{_functions_8h_a70adbc55a0c16718127c2f400f46495e}\label{_functions_8h_a70adbc55a0c16718127c2f400f46495e}} 
 \index{Functions.h@{Functions.h}!manual@{manual}}
 \index{manual@{manual}!Functions.h@{Functions.h}}
 \doxysubsubsection{\texorpdfstring{manual()}{manual()}}
 {\footnotesize\ttfamily void manual (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{_functions_8h_a653a7225ce97844a298bc5a880ad974f}\label{_functions_8h_a653a7225ce97844a298bc5a880ad974f}} 
+Funkcja wyświetla instrukcję dla użytkownika \mbox{\Hypertarget{_functions_8h_a82f9d4d30cc7b36d6eccb517627e4be4}\label{_functions_8h_a82f9d4d30cc7b36d6eccb517627e4be4}} 
 \index{Functions.h@{Functions.h}!modyfyStack@{modyfyStack}}
 \index{modyfyStack@{modyfyStack}!Functions.h@{Functions.h}}
 \doxysubsubsection{\texorpdfstring{modyfyStack()}{modyfyStack()}}
-{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_pair}{Pair}}$\ast$ modyfy\+Stack (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_stack}{Stack}} $\ast$}]{stack,  }\item[{struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$}]{onp,  }\item[{enum \mbox{\hyperlink{_structures_8h_a1d1cfd8ffb84e947f82999c682b666a7}{Type}}}]{type }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_pair}{Pair}}$\ast$ modyfy\+Stack (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_stack}{Stack}} $\ast$}]{p\+Stack,  }\item[{struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$}]{p\+Tail,  }\item[{enum \mbox{\hyperlink{_structures_8h_a1d1cfd8ffb84e947f82999c682b666a7}{Type}}}]{type }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{_functions_8h_a377d8f0635f6388fa18c5c0e10305242}\label{_functions_8h_a377d8f0635f6388fa18c5c0e10305242}} 
+Funkcja skupia w sobie usuwanie danych ze stosu, dodawnie ich do przekonwertowanego na O\+NP równania oraz dodawanie nowych danych na stos 
+\begin{DoxyParams}{Parametry}
+{\em p\+Stack} & adres pierwszego elementu stosu \\
+\hline
+{\em p\+Tail} & adres ostatniego elementu przekonwertowanego na O\+NP równania \\
+\hline
+{\em type} & typ danego znaku lub liczby \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+adres aktualnej struktury \mbox{\hyperlink{struct_pair}{Pair}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_functions_8h_aca33b4ca61f3b0e243bf2928c5ec3573}\label{_functions_8h_aca33b4ca61f3b0e243bf2928c5ec3573}} 
 \index{Functions.h@{Functions.h}!onpBuilder@{onpBuilder}}
 \index{onpBuilder@{onpBuilder}!Functions.h@{Functions.h}}
 \doxysubsubsection{\texorpdfstring{onpBuilder()}{onpBuilder()}}
-{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_onp}{Onp}}$\ast$ onp\+Builder (\begin{DoxyParamCaption}\item[{double}]{result,  }\item[{char $\ast$}]{input }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_onp}{Onp}}$\ast$ onp\+Builder (\begin{DoxyParamCaption}\item[{double}]{result,  }\item[{char $\ast$}]{input,  }\item[{\mbox{\hyperlink{_structures_8h_af6a258d8f3ee5206d682d799316314b1}{bool}}}]{rewrite }\end{DoxyParamCaption})}
 
+Funkcja służy do przekonwertowania równania ze standardowej notacji do odwrotnej notacji polskiej 
+\begin{DoxyParams}{Parametry}
+{\em result} & wynik poprzedniego równania \\
+\hline
+{\em input} & adres łańcucha znaków zawierającego otrzymane od urzytkownika równanie \\
+\hline
+{\em rewrite} & warunek przepisania wyniku poprzedniego równania do nowego \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+adres pierwszego elementu przekonwertowanego na O\+NP równania 
+\end{DoxyReturn}
 \mbox{\Hypertarget{_functions_8h_a08f6390f37552cd213545974c1138e21}\label{_functions_8h_a08f6390f37552cd213545974c1138e21}} 
 \index{Functions.h@{Functions.h}!printOnp@{printOnp}}
 \index{printOnp@{printOnp}!Functions.h@{Functions.h}}
 \doxysubsubsection{\texorpdfstring{printOnp()}{printOnp()}}
 {\footnotesize\ttfamily void print\+Onp (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$}]{p\+Head }\end{DoxyParamCaption})}
 
+Funkcja wyświetla równanie przekonwertowane na odwrotną notacje polską 
+\begin{DoxyParams}{Parametry}
+{\em p\+Head} & wskaźnik pierwszy element przekonwertowanego równania \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8h_a490ac1be3aa1dee47a75a4a144b7a925}\label{_functions_8h_a490ac1be3aa1dee47a75a4a144b7a925}} 
+\index{Functions.h@{Functions.h}!readFile@{readFile}}
+\index{readFile@{readFile}!Functions.h@{Functions.h}}
+\doxysubsubsection{\texorpdfstring{readFile()}{readFile()}}
+{\footnotesize\ttfamily char$\ast$ read\+File (\begin{DoxyParamCaption}\item[{char $\ast$}]{argv1 }\end{DoxyParamCaption})}
+
+Funkcja odczytuje równanie podane w pliku (podanym z lini poleceń) 
+\begin{DoxyParams}{Parametry}
+{\em argv1} & adres nazwy pliku do odczytu \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+równanie podne w pliku 
+\end{DoxyReturn}
 \mbox{\Hypertarget{_functions_8h_a7f7806debeef2ad983043b7052a9ba9a}\label{_functions_8h_a7f7806debeef2ad983043b7052a9ba9a}} 
 \index{Functions.h@{Functions.h}!removeFromStack@{removeFromStack}}
 \index{removeFromStack@{removeFromStack}!Functions.h@{Functions.h}}
 \doxysubsubsection{\texorpdfstring{removeFromStack()}{removeFromStack()}}
 {\footnotesize\ttfamily struct \mbox{\hyperlink{struct_stack}{Stack}}$\ast$ remove\+From\+Stack (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_stack}{Stack}} $\ast$}]{p\+Stack }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{_functions_8h_a38fb29c8c0101dbd3ac9ad2f2b7c85ff}\label{_functions_8h_a38fb29c8c0101dbd3ac9ad2f2b7c85ff}} 
+Funkcja służy do usuwania znaku z poczatku stosu 
+\begin{DoxyParams}{Parametry}
+{\em p\+Stack} & adres pierwszego elementu stosu \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+adres pierwszego elementu stosu 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_functions_8h_ada1f2576b2bb67ee99a3d0d1679ec3b8}\label{_functions_8h_ada1f2576b2bb67ee99a3d0d1679ec3b8}} 
+\index{Functions.h@{Functions.h}!setState@{setState}}
+\index{setState@{setState}!Functions.h@{Functions.h}}
+\doxysubsubsection{\texorpdfstring{setState()}{setState()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_structures_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} set\+State (\begin{DoxyParamCaption}\item[{enum \mbox{\hyperlink{_structures_8h_a1d1cfd8ffb84e947f82999c682b666a7}{Type}}}]{type }\end{DoxyParamCaption})}
+
+Funkcja ustala czy kalkulator powinien zakończyć działanie lub wyczyścić wyświetlacz 
+\begin{DoxyParams}{Parametry}
+{\em type} & typ napotkanego znaku \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+true albo false w zależności co zostanie ustalone 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_functions_8h_ac7d287f176dcaa3640dde7526567e873}\label{_functions_8h_ac7d287f176dcaa3640dde7526567e873}} 
 \index{Functions.h@{Functions.h}!stackAction@{stackAction}}
 \index{stackAction@{stackAction}!Functions.h@{Functions.h}}
 \doxysubsubsection{\texorpdfstring{stackAction()}{stackAction()}}
-{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_pair}{Pair}}$\ast$ stack\+Action (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_stack}{Stack}} $\ast$}]{head,  }\item[{struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$}]{tail,  }\item[{enum \mbox{\hyperlink{_structures_8h_a1d1cfd8ffb84e947f82999c682b666a7}{Type}}}]{type }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_pair}{Pair}}$\ast$ stack\+Action (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_stack}{Stack}} $\ast$}]{p\+Stack,  }\item[{struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$}]{p\+Tail,  }\item[{enum \mbox{\hyperlink{_structures_8h_a1d1cfd8ffb84e947f82999c682b666a7}{Type}}}]{type }\end{DoxyParamCaption})}
 
+Funkcja skupia w sobie wszystkie operacje związane ze stosem dla danego typu znaku (dokładniej opisane w innych funkcjach) 
+\begin{DoxyParams}{Parametry}
+{\em p\+Stack} & adres pierwszego elementu stosu \\
+\hline
+{\em p\+Tail} & adres ostatniego elementu przekonwertowanego na O\+NP równania \\
+\hline
+{\em type} & typ danego znaku lub liczby \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+adres aktualnej struktury \mbox{\hyperlink{struct_pair}{Pair}} 
+\end{DoxyReturn}
 \mbox{\Hypertarget{_functions_8h_a06d601a646f481e88b29d464f8b972be}\label{_functions_8h_a06d601a646f481e88b29d464f8b972be}} 
 \index{Functions.h@{Functions.h}!stateControl@{stateControl}}
 \index{stateControl@{stateControl}!Functions.h@{Functions.h}}
 \doxysubsubsection{\texorpdfstring{stateControl()}{stateControl()}}
 {\footnotesize\ttfamily struct \mbox{\hyperlink{struct_onp}{Onp}}$\ast$ state\+Control (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$}]{p\+Tail,  }\item[{\mbox{\hyperlink{_structures_8h_af6a258d8f3ee5206d682d799316314b1}{bool}}}]{to\+Clear,  }\item[{\mbox{\hyperlink{_structures_8h_af6a258d8f3ee5206d682d799316314b1}{bool}}}]{to\+Stop }\end{DoxyParamCaption})}
 
+Funkcja sprawdza czy kalkulator spełnia warunki do kontynuowania pracy w niezmienionym stanie 
+\begin{DoxyParams}{Parametry}
+{\em p\+Tail} & adres ostatniego elementu przekonwertowanego na O\+NP równania \\
+\hline
+{\em to\+Clear} & warunek usunięcia z wyświetlacza wszystkich danych \\
+\hline
+{\em to\+Stop} & warunek zakończenia pracy kalkulatora \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+adres pierwszego elementu przekonwertowanego na O\+NP równania 
+\end{DoxyReturn}

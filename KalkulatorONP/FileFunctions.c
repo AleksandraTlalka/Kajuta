@@ -6,8 +6,9 @@
 
 #include "Constans.h"
 #include "Structures.h"
-#include "Functions.h"
-
+#include "FileFunctions.h"
+#include "UiFunctions.h"
+#include "ConvertFunctions.h"
 
 char* readFile(char* argv1) {
 	char input[INPUT_SIZE];

@@ -7,7 +7,8 @@
 
 #include "Constans.h"
 #include "Structures.h"
-#include "Functions.h"
+#include "ConvertFunctions.h"
+#include "StackFunctions.h"
 
 
 struct Pair* stackAction(struct Stack* pStack, struct Onp* pTail, enum Type type)

@@ -91,6 +91,7 @@ $(document).ready(function(){initNavTree('_ui_functions_8c.html',''); initResiza
 <div class="contents">
 <div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="_constans_8h_source.html">Constans.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_structures_8h_source.html">Structures.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_functions_8h_source.html">Functions.h</a>&quot;</code><br />
@@ -102,12 +103,16 @@ Definicje</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Funkcje</h2></td></tr>
+<tr class="memitem:a084fdbf39c5e2cd543f14f24f18de5fc"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_ui_functions_8c.html#a084fdbf39c5e2cd543f14f24f18de5fc">getUserChoice</a> (char *argv)</td></tr>
+<tr class="separator:a084fdbf39c5e2cd543f14f24f18de5fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad20c2cd759c26a6d892271f330a0ff0e"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_ui_functions_8c.html#ad20c2cd759c26a6d892271f330a0ff0e">getUserInput</a> ()</td></tr>
 <tr class="separator:ad20c2cd759c26a6d892271f330a0ff0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08f6390f37552cd213545974c1138e21"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_ui_functions_8c.html#a08f6390f37552cd213545974c1138e21">printOnp</a> (struct <a class="el" href="struct_onp.html">Onp</a> *pHead)</td></tr>
 <tr class="separator:a08f6390f37552cd213545974c1138e21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70adbc55a0c16718127c2f400f46495e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_ui_functions_8c.html#a70adbc55a0c16718127c2f400f46495e">manual</a> ()</td></tr>
 <tr class="separator:a70adbc55a0c16718127c2f400f46495e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad42db24f4faaf69510f6acea4af4e9ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_ui_functions_8c.html#ad42db24f4faaf69510f6acea4af4e9ed">divideByZero</a> (char *input)</td></tr>
+<tr class="separator:ad42db24f4faaf69510f6acea4af4e9ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Dokumentacja definicji</h2>
 <a id="a411c46599e926f8cdf49c63957255359"></a>
@@ -125,6 +130,55 @@ Funkcje</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Dokumentacja funkcji</h2>
+<a id="ad42db24f4faaf69510f6acea4af4e9ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad42db24f4faaf69510f6acea4af4e9ed">&#9670;&nbsp;</a></span>divideByZero()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void divideByZero </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>input</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Funkcja sprawdza czy użytkownik próbuje dzielć przez 0 </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td>podane równanie </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a084fdbf39c5e2cd543f14f24f18de5fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a084fdbf39c5e2cd543f14f24f18de5fc">&#9670;&nbsp;</a></span>getUserChoice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* getUserChoice </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>argv</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Funkcja otrzymuje od użytkownika informację czy w wierszu linii poleceń podał nazwę pliku czy równanie </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">argv</td><td>adres łańcucha znaków (otrzymanego równania lub nazwy pliku) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>otrzymane od użytkownika lub z pliku równanie </dd></dl>
+
+</div>
+</div>
 <a id="ad20c2cd759c26a6d892271f330a0ff0e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad20c2cd759c26a6d892271f330a0ff0e">&#9670;&nbsp;</a></span>getUserInput()</h2>
 
@@ -139,6 +193,7 @@ Funkcje</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Funkcja otrzymuje równanie od użytkownika. </p><dl class="section return"><dt>Zwraca</dt><dd>adres łańcucha znaków (otrzymanego równania) </dd></dl>
 
 </div>
 </div>
@@ -156,6 +211,7 @@ Funkcje</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Funkcja wyświetla instrukcję dla użytkownika </p>
 
 </div>
 </div>
@@ -174,6 +230,12 @@ Funkcje</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Funkcja wyświetla równanie przekonwertowane na odwrotną notacje polską </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pHead</td><td>wskaźnik pierwszy element przekonwertowanego równania </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

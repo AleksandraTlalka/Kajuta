@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['removefromstack_108',['removeFromStack',['../_functions_8h.html#a7f7806debeef2ad983043b7052a9ba9a',1,'removeFromStack(struct Stack *pStack):&#160;StackFunctions.c'],['../_stack_functions_8c.html#a7f7806debeef2ad983043b7052a9ba9a',1,'removeFromStack(struct Stack *pStack):&#160;StackFunctions.c']]]
+  ['printonp_117',['printOnp',['../_functions_8h.html#a08f6390f37552cd213545974c1138e21',1,'printOnp(struct Onp *pHead):&#160;UiFunctions.c'],['../_ui_functions_8c.html#a08f6390f37552cd213545974c1138e21',1,'printOnp(struct Onp *pHead):&#160;UiFunctions.c']]]
 ];

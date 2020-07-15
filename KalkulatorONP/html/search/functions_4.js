@@ -1,6 +1,11 @@
 var searchData=
 [
-  ['main_103',['main',['../_main_8c.html#a0ddf1224851353fc92bfbff6f499fa97',1,'Main.c']]],
-  ['manual_104',['manual',['../_functions_8h.html#a70adbc55a0c16718127c2f400f46495e',1,'manual():&#160;UiFunctions.c'],['../_ui_functions_8c.html#a70adbc55a0c16718127c2f400f46495e',1,'manual():&#160;UiFunctions.c']]],
-  ['modyfystack_105',['modyfyStack',['../_functions_8h.html#a653a7225ce97844a298bc5a880ad974f',1,'modyfyStack(struct Stack *stack, struct Onp *onp, enum Type type):&#160;StackFunctions.c'],['../_stack_functions_8c.html#a82f9d4d30cc7b36d6eccb517627e4be4',1,'modyfyStack(struct Stack *pStack, struct Onp *pTail, enum Type type):&#160;StackFunctions.c']]]
+  ['getfraction_105',['getFraction',['../_convert_functions_8c.html#abe283f6439d58e519bc78bdd94939395',1,'getFraction(double number):&#160;ConvertFunctions.c'],['../_functions_8h.html#abe283f6439d58e519bc78bdd94939395',1,'getFraction(double number):&#160;ConvertFunctions.c']]],
+  ['getmultiresult_106',['getMultiResult',['../_calulator_8c.html#ab629fdfc299b41354cd780e9fd417a31',1,'getMultiResult(enum Type type, double head, double prev):&#160;Calulator.c'],['../_functions_8h.html#ab629fdfc299b41354cd780e9fd417a31',1,'getMultiResult(enum Type type, double head, double prev):&#160;Calulator.c']]],
+  ['getoperation_107',['getOperation',['../_convert_functions_8c.html#a5d68478129b5d370844926679292d7b2',1,'getOperation(enum Type type):&#160;ConvertFunctions.c'],['../_functions_8h.html#a5d68478129b5d370844926679292d7b2',1,'getOperation(enum Type type):&#160;ConvertFunctions.c']]],
+  ['getpriority_108',['getPriority',['../_convert_functions_8c.html#ac9e2ddd7666b80169b8d9a3f8419d8e7',1,'getPriority(enum Type type):&#160;ConvertFunctions.c'],['../_functions_8h.html#ac9e2ddd7666b80169b8d9a3f8419d8e7',1,'getPriority(enum Type type):&#160;ConvertFunctions.c']]],
+  ['getsingleresult_109',['getSingleResult',['../_calulator_8c.html#a7356622e78d8e74603f886193fc2560d',1,'getSingleResult(enum Type type, double head):&#160;Calulator.c'],['../_functions_8h.html#a7356622e78d8e74603f886193fc2560d',1,'getSingleResult(enum Type type, double head):&#160;Calulator.c']]],
+  ['gettype_110',['getType',['../_convert_functions_8c.html#a18e9186252836be9a4419817b163ac11',1,'getType(char input):&#160;ConvertFunctions.c'],['../_functions_8h.html#a18e9186252836be9a4419817b163ac11',1,'getType(char input):&#160;ConvertFunctions.c']]],
+  ['getuserchoice_111',['getUserChoice',['../_functions_8h.html#a084fdbf39c5e2cd543f14f24f18de5fc',1,'getUserChoice(char *argv):&#160;UiFunctions.c'],['../_ui_functions_8c.html#a084fdbf39c5e2cd543f14f24f18de5fc',1,'getUserChoice(char *argv):&#160;UiFunctions.c']]],
+  ['getuserinput_112',['getUserInput',['../_functions_8h.html#ad20c2cd759c26a6d892271f330a0ff0e',1,'getUserInput():&#160;UiFunctions.c'],['../_ui_functions_8c.html#ad20c2cd759c26a6d892271f330a0ff0e',1,'getUserInput():&#160;UiFunctions.c']]]
 ];

@@ -16,13 +16,15 @@
 \doxysubsection*{Funkcje}
 \begin{DoxyCompactItemize}
 \item 
-struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$ \mbox{\hyperlink{_onp_functions_8c_a377d8f0635f6388fa18c5c0e10305242}{onp\+Builder}} (double result, char $\ast$input)
+struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$ \mbox{\hyperlink{_onp_functions_8c_aca33b4ca61f3b0e243bf2928c5ec3573}{onp\+Builder}} (double result, char $\ast$input, \mbox{\hyperlink{_structures_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} rewrite)
 \item 
 struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$ \mbox{\hyperlink{_onp_functions_8c_a30110c882ff1d0ce433c6e0bf86f6b7a}{add\+To\+Onp}} (struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$p\+Tail, enum \mbox{\hyperlink{_structures_8h_a1d1cfd8ffb84e947f82999c682b666a7}{Type}} type, double value)
 \item 
-struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$ \mbox{\hyperlink{_onp_functions_8c_add319689d7b76a1ba020ff38fe45fafd}{add\+To\+Pair}} (struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$p\+Tail, struct \mbox{\hyperlink{struct_stack}{Stack}} $\ast$p\+Stack)
+struct \mbox{\hyperlink{struct_pair}{Pair}} $\ast$ \mbox{\hyperlink{_onp_functions_8c_ac74f19eec2415bd64c5addc8008171cf}{add\+To\+Pair}} (struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$p\+Tail, struct \mbox{\hyperlink{struct_stack}{Stack}} $\ast$p\+Stack)
 \item 
 struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$ \mbox{\hyperlink{_onp_functions_8c_a7256e18b1853e5958a83bf869dc7c503}{find\+Onp\+Head}} (struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$p\+Tail)
+\item 
+\mbox{\hyperlink{_structures_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} \mbox{\hyperlink{_onp_functions_8c_ada1f2576b2bb67ee99a3d0d1679ec3b8}{set\+State}} (enum \mbox{\hyperlink{_structures_8h_a1d1cfd8ffb84e947f82999c682b666a7}{Type}} type)
 \item 
 struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$ \mbox{\hyperlink{_onp_functions_8c_a06d601a646f481e88b29d464f8b972be}{state\+Control}} (struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$p\+Tail, \mbox{\hyperlink{_structures_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} to\+Clear, \mbox{\hyperlink{_structures_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} to\+Stop)
 \item 
@@ -44,35 +46,108 @@ void \mbox{\hyperlink{_onp_functions_8c_a1aa3f363ae68da2b93b02657f998da6b}{free\
 \index{OnpFunctions.c@{OnpFunctions.c}!addToOnp@{addToOnp}}
 \index{addToOnp@{addToOnp}!OnpFunctions.c@{OnpFunctions.c}}
 \doxysubsubsection{\texorpdfstring{addToOnp()}{addToOnp()}}
-{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_onp}{Onp}}$\ast$ add\+To\+Onp (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$}]{p\+Tail,  }\item[{enum \mbox{\hyperlink{_structures_8h_a1d1cfd8ffb84e947f82999c682b666a7}{Type}}}]{type,  }\item[{double}]{value }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_onp}{Onp}}$\ast$ add\+To\+Onp (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$}]{tail,  }\item[{enum \mbox{\hyperlink{_structures_8h_a1d1cfd8ffb84e947f82999c682b666a7}{Type}}}]{type,  }\item[{double}]{value }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{_onp_functions_8c_add319689d7b76a1ba020ff38fe45fafd}\label{_onp_functions_8c_add319689d7b76a1ba020ff38fe45fafd}} 
+Funkcja służy do dodawania liczby lub znaku do przekonwertowanego na O\+NP równania 
+\begin{DoxyParams}{Parametry}
+{\em tail} & adres ostatniego elementu przekonwertowanego na O\+NP równania \\
+\hline
+{\em type} & typ dodawnaego znaku lub liczby \\
+\hline
+{\em value} & wartość dodawanego znaku lub liczby \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+adres ostatniego elementu przekonwertowanego na O\+NP równania 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_onp_functions_8c_ac74f19eec2415bd64c5addc8008171cf}\label{_onp_functions_8c_ac74f19eec2415bd64c5addc8008171cf}} 
 \index{OnpFunctions.c@{OnpFunctions.c}!addToPair@{addToPair}}
 \index{addToPair@{addToPair}!OnpFunctions.c@{OnpFunctions.c}}
 \doxysubsubsection{\texorpdfstring{addToPair()}{addToPair()}}
-{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_onp}{Onp}}$\ast$ add\+To\+Pair (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$}]{p\+Tail,  }\item[{struct \mbox{\hyperlink{struct_stack}{Stack}} $\ast$}]{p\+Stack }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_pair}{Pair}}$\ast$ add\+To\+Pair (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$}]{p\+Tail,  }\item[{struct \mbox{\hyperlink{struct_stack}{Stack}} $\ast$}]{p\+Stack }\end{DoxyParamCaption})}
 
+Funkcja służy uaktualniania stanu ostatniego elementu przekonwertowanego na O\+NP równania i stosu 
+\begin{DoxyParams}{Parametry}
+{\em p\+Tail} & adres ostatniego elementu przekonwertowanego na O\+NP równania \\
+\hline
+{\em p\+Stack} & adres pierwszego elementu stosu \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+adres aktualnej struktury \mbox{\hyperlink{struct_pair}{Pair}} 
+\end{DoxyReturn}
 \mbox{\Hypertarget{_onp_functions_8c_a7256e18b1853e5958a83bf869dc7c503}\label{_onp_functions_8c_a7256e18b1853e5958a83bf869dc7c503}} 
 \index{OnpFunctions.c@{OnpFunctions.c}!findOnpHead@{findOnpHead}}
 \index{findOnpHead@{findOnpHead}!OnpFunctions.c@{OnpFunctions.c}}
 \doxysubsubsection{\texorpdfstring{findOnpHead()}{findOnpHead()}}
 {\footnotesize\ttfamily struct \mbox{\hyperlink{struct_onp}{Onp}}$\ast$ find\+Onp\+Head (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$}]{p\+Tail }\end{DoxyParamCaption})}
 
+Funkcja znajduje pierwszy element listy jednokierunkowej 
+\begin{DoxyParams}{Parametry}
+{\em p\+Tail} & adres ostatniego elementu przekonwertowanego na O\+NP równania \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+adres pierwszego elementu przekonwertowanego na O\+NP równania 
+\end{DoxyReturn}
 \mbox{\Hypertarget{_onp_functions_8c_a1aa3f363ae68da2b93b02657f998da6b}\label{_onp_functions_8c_a1aa3f363ae68da2b93b02657f998da6b}} 
 \index{OnpFunctions.c@{OnpFunctions.c}!freeOnp@{freeOnp}}
 \index{freeOnp@{freeOnp}!OnpFunctions.c@{OnpFunctions.c}}
 \doxysubsubsection{\texorpdfstring{freeOnp()}{freeOnp()}}
 {\footnotesize\ttfamily void free\+Onp (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$}]{p\+Head }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{_onp_functions_8c_a377d8f0635f6388fa18c5c0e10305242}\label{_onp_functions_8c_a377d8f0635f6388fa18c5c0e10305242}} 
+Funkcja usuwa od początku listę jednokierunkową przekonwertowanego na O\+NP równania 
+\begin{DoxyParams}{Parametry}
+{\em p\+Head} & wskaźnik na pierwszy element listy – po usunięciu listy jest równy nullptr. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_onp_functions_8c_aca33b4ca61f3b0e243bf2928c5ec3573}\label{_onp_functions_8c_aca33b4ca61f3b0e243bf2928c5ec3573}} 
 \index{OnpFunctions.c@{OnpFunctions.c}!onpBuilder@{onpBuilder}}
 \index{onpBuilder@{onpBuilder}!OnpFunctions.c@{OnpFunctions.c}}
 \doxysubsubsection{\texorpdfstring{onpBuilder()}{onpBuilder()}}
-{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_onp}{Onp}}$\ast$ onp\+Builder (\begin{DoxyParamCaption}\item[{double}]{result,  }\item[{char $\ast$}]{input }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_onp}{Onp}}$\ast$ onp\+Builder (\begin{DoxyParamCaption}\item[{double}]{result,  }\item[{char $\ast$}]{input,  }\item[{\mbox{\hyperlink{_structures_8h_af6a258d8f3ee5206d682d799316314b1}{bool}}}]{rewrite }\end{DoxyParamCaption})}
 
+Funkcja służy do przekonwertowania równania ze standardowej notacji do odwrotnej notacji polskiej 
+\begin{DoxyParams}{Parametry}
+{\em result} & wynik poprzedniego równania \\
+\hline
+{\em input} & adres łańcucha znaków zawierającego otrzymane od urzytkownika równanie \\
+\hline
+{\em rewrite} & warunek przepisania wyniku poprzedniego równania do nowego \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+adres pierwszego elementu przekonwertowanego na O\+NP równania 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_onp_functions_8c_ada1f2576b2bb67ee99a3d0d1679ec3b8}\label{_onp_functions_8c_ada1f2576b2bb67ee99a3d0d1679ec3b8}} 
+\index{OnpFunctions.c@{OnpFunctions.c}!setState@{setState}}
+\index{setState@{setState}!OnpFunctions.c@{OnpFunctions.c}}
+\doxysubsubsection{\texorpdfstring{setState()}{setState()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_structures_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} set\+State (\begin{DoxyParamCaption}\item[{enum \mbox{\hyperlink{_structures_8h_a1d1cfd8ffb84e947f82999c682b666a7}{Type}}}]{type }\end{DoxyParamCaption})}
+
+Funkcja ustala czy kalkulator powinien zakończyć działanie lub wyczyścić wyświetlacz 
+\begin{DoxyParams}{Parametry}
+{\em type} & typ napotkanego znaku \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+true albo false w zależności co zostanie ustalone 
+\end{DoxyReturn}
 \mbox{\Hypertarget{_onp_functions_8c_a06d601a646f481e88b29d464f8b972be}\label{_onp_functions_8c_a06d601a646f481e88b29d464f8b972be}} 
 \index{OnpFunctions.c@{OnpFunctions.c}!stateControl@{stateControl}}
 \index{stateControl@{stateControl}!OnpFunctions.c@{OnpFunctions.c}}
 \doxysubsubsection{\texorpdfstring{stateControl()}{stateControl()}}
 {\footnotesize\ttfamily struct \mbox{\hyperlink{struct_onp}{Onp}}$\ast$ state\+Control (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$}]{p\+Tail,  }\item[{\mbox{\hyperlink{_structures_8h_af6a258d8f3ee5206d682d799316314b1}{bool}}}]{to\+Clear,  }\item[{\mbox{\hyperlink{_structures_8h_af6a258d8f3ee5206d682d799316314b1}{bool}}}]{to\+Stop }\end{DoxyParamCaption})}
 
+Funkcja sprawdza czy kalkulator spełnia warunki do kontynuowania pracy w niezmienionym stanie 
+\begin{DoxyParams}{Parametry}
+{\em p\+Tail} & adres ostatniego elementu przekonwertowanego na O\+NP równania \\
+\hline
+{\em to\+Clear} & warunek usunięcia z wyświetlacza wszystkich danych \\
+\hline
+{\em to\+Stop} & warunek zakończenia pracy kalkulatora \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+adres pierwszego elementu przekonwertowanego na O\+NP równania 
+\end{DoxyReturn}

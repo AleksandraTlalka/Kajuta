@@ -109,8 +109,8 @@ Funkcje</h2></td></tr>
 <tr class="separator:ac7d287f176dcaa3640dde7526567e873"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82f9d4d30cc7b36d6eccb517627e4be4"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="struct_pair.html">Pair</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_stack_functions_8c.html#a82f9d4d30cc7b36d6eccb517627e4be4">modyfyStack</a> (struct <a class="el" href="struct_stack.html">Stack</a> *pStack, struct <a class="el" href="struct_onp.html">Onp</a> *pTail, enum <a class="el" href="_structures_8h.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a> type)</td></tr>
 <tr class="separator:a82f9d4d30cc7b36d6eccb517627e4be4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12e4a82fa69284dd2dbb2aebbbbf4dda"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="struct_stack.html">Stack</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_stack_functions_8c.html#a12e4a82fa69284dd2dbb2aebbbbf4dda">addToStack</a> (struct <a class="el" href="struct_stack.html">Stack</a> *head, enum <a class="el" href="_structures_8h.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a> type, double prioryty)</td></tr>
-<tr class="separator:a12e4a82fa69284dd2dbb2aebbbbf4dda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a900e986d3cd9733d3d0d9efdedfa7f76"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="struct_stack.html">Stack</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_stack_functions_8c.html#a900e986d3cd9733d3d0d9efdedfa7f76">addToStack</a> (struct <a class="el" href="struct_stack.html">Stack</a> *pStack, enum <a class="el" href="_structures_8h.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a> type, double prioryty)</td></tr>
+<tr class="separator:a900e986d3cd9733d3d0d9efdedfa7f76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f7806debeef2ad983043b7052a9ba9a"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="struct_stack.html">Stack</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_stack_functions_8c.html#a7f7806debeef2ad983043b7052a9ba9a">removeFromStack</a> (struct <a class="el" href="struct_stack.html">Stack</a> *pStack)</td></tr>
 <tr class="separator:a7f7806debeef2ad983043b7052a9ba9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -130,8 +130,8 @@ Funkcje</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Dokumentacja funkcji</h2>
-<a id="a12e4a82fa69284dd2dbb2aebbbbf4dda"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a12e4a82fa69284dd2dbb2aebbbbf4dda">&#9670;&nbsp;</a></span>addToStack()</h2>
+<a id="a900e986d3cd9733d3d0d9efdedfa7f76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a900e986d3cd9733d3d0d9efdedfa7f76">&#9670;&nbsp;</a></span>addToStack()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -140,7 +140,7 @@ Funkcje</h2></td></tr>
           <td class="memname">struct <a class="el" href="struct_stack.html">Stack</a>* addToStack </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="struct_stack.html">Stack</a> *&#160;</td>
-          <td class="paramname"><em>head</em>, </td>
+          <td class="paramname"><em>pStack</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -161,6 +161,15 @@ Funkcje</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Funkcja służy do dodawania znaku na początek stosu </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pStack</td><td>adres pierwszego elementu stosu </td></tr>
+    <tr><td class="paramname">type</td><td>typ dodawanego znaku </td></tr>
+    <tr><td class="paramname">prioryty</td><td>prorytet przypisany dodawemu znakowi </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>adres pierwszego elementu stosu </dd></dl>
 
 </div>
 </div>
@@ -195,6 +204,15 @@ Funkcje</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Funkcja skupia w sobie usuwanie danych ze stosu, dodawnie ich do przekonwertowanego na ONP równania oraz dodawanie nowych danych na stos </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pStack</td><td>adres pierwszego elementu stosu </td></tr>
+    <tr><td class="paramname">pTail</td><td>adres ostatniego elementu przekonwertowanego na ONP równania </td></tr>
+    <tr><td class="paramname">type</td><td>typ danego znaku lub liczby </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>adres aktualnej struktury <a class="el" href="struct_pair.html">Pair</a> </dd></dl>
 
 </div>
 </div>
@@ -213,6 +231,13 @@ Funkcje</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Funkcja służy do usuwania znaku z poczatku stosu </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pStack</td><td>adres pierwszego elementu stosu </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>adres pierwszego elementu stosu </dd></dl>
 
 </div>
 </div>
@@ -247,6 +272,15 @@ Funkcje</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Funkcja skupia w sobie wszystkie operacje związane ze stosem dla danego typu znaku (dokładniej opisane w innych funkcjach) </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pStack</td><td>adres pierwszego elementu stosu </td></tr>
+    <tr><td class="paramname">pTail</td><td>adres ostatniego elementu przekonwertowanego na ONP równania </td></tr>
+    <tr><td class="paramname">type</td><td>typ danego znaku lub liczby </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>adres aktualnej struktury <a class="el" href="struct_pair.html">Pair</a> </dd></dl>
 
 </div>
 </div>

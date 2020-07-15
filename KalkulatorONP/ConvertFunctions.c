@@ -6,7 +6,8 @@
 
 #include "Constans.h"
 #include "Structures.h"
-#include "Functions.h"
+#include "ConvertFunctions.h"
+
 
 
 enum Type getType(char input) {

@@ -109,6 +109,8 @@ Funkcje</h2></td></tr>
 <tr class="separator:ab629fdfc299b41354cd780e9fd417a31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7356622e78d8e74603f886193fc2560d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_calulator_8c.html#a7356622e78d8e74603f886193fc2560d">getSingleResult</a> (enum <a class="el" href="_structures_8h.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a> type, double head)</td></tr>
 <tr class="separator:a7356622e78d8e74603f886193fc2560d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57763a402e9db8c16c9421ae99d98cde"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_calulator_8c.html#a57763a402e9db8c16c9421ae99d98cde">FreeMemory</a> (struct <a class="el" href="struct_onp.html">Onp</a> *pHead, char *input)</td></tr>
+<tr class="separator:a57763a402e9db8c16c9421ae99d98cde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Dokumentacja definicji</h2>
 <a id="a411c46599e926f8cdf49c63957255359"></a>
@@ -141,6 +143,48 @@ Funkcje</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Funkcja służy do obliczania wyniku równania przekonwertowanego na ONP </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pHead</td><td>adres pierwszego elementu listy jednokierunkowej przekonwertowanego na ONP równania </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>wynik równania </dd></dl>
+
+</div>
+</div>
+<a id="a57763a402e9db8c16c9421ae99d98cde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57763a402e9db8c16c9421ae99d98cde">&#9670;&nbsp;</a></span>FreeMemory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FreeMemory </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="struct_onp.html">Onp</a> *&#160;</td>
+          <td class="paramname"><em>pHead</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>input</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Funkcja zwalnia pamięć po wykonaniu wszystkich operacji </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pHead</td><td>adres pierwszego elementu listy jednokierunkowej przekonwertowanego na ONP równania </td></tr>
+    <tr><td class="paramname">input</td><td>adres łańcucha znaków zawierającego otrzymane od użytkownika równanie </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -175,6 +219,15 @@ Funkcje</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Funkcja służy do obliczania wyniku pojedyńczej operacji składającej sie z dwóch liczb i operatora dwuelementowego </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>typ operatora dwuelementowego </td></tr>
+    <tr><td class="paramname">head</td><td>pierwsza liczba (bliższa pierwszego elementu stosu - znaku) </td></tr>
+    <tr><td class="paramname">prev</td><td>druga liczba (liczba poprzedzajaca pierwszą) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>wynik operacji </dd></dl>
 
 </div>
 </div>
@@ -203,6 +256,14 @@ Funkcje</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Funkcja służy do obliczania wyniku pojedyńczej operacji składającej sie z liczby i operatora jednoelementowego </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>typ operatora jednoelementowego </td></tr>
+    <tr><td class="paramname">head</td><td>liczba najbliższa pierwszego elementu stosu - znaku </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>wynik operacji </dd></dl>
 
 </div>
 </div>

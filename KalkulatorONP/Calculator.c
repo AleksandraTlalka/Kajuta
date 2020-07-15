@@ -6,7 +6,10 @@
 
 #include "Constans.h"
 #include "Structures.h"
-#include "Functions.h"
+#include "ConvertFunctions.h"
+#include "StackFunctions.h"
+#include "Calculator.h"
+
 
 
 double calculator(struct Onp* pHead) {
