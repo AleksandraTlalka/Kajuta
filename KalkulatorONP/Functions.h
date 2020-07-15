@@ -27,7 +27,10 @@ void printOnp(struct Onp* pHead);
 /**Funkcja wyœwietla instrukcjê dla u¿ytkownika*/
 void manual();
 
-
+/**Funkcja sprawdza czy u¿ytkownik próbuje dzielæ przez 0
+@param input podane równanie
+*/
+void divideByZero(char* input);
 //--------------------------------------------------------------------------------------------------------------------
 // --------------------------------------------------------------------------------------------------Convert Functions
 
@@ -93,6 +96,12 @@ struct Pair* addToPair(struct Onp* pTail, struct Stack* pStack);
 @return adres pierwszego elementu przekonwertowanego na ONP równania
 */
 struct Onp* findOnpHead(struct Onp* pTail);
+
+/**Funkcja ustala czy kalkulator powinien zakoñczyæ dzia³anie lub wyczyœciæ wyœwietlacz
+@param type typ napotkanego znaku
+@return true albo false w zale¿noœci co zostanie ustalone
+*/
+bool setState(enum Type type);
 
 /**Funkcja sprawdza czy kalkulator spe³nia warunki do kontynuowania pracy w niezmienionym stanie
 @param pTail adres ostatniego elementu przekonwertowanego na ONP równania
@@ -166,7 +175,11 @@ double getMultiResult(enum Type type, double head, double prev);
 */
 double getSingleResult(enum Type type, double head);
 
-
+/**Funkcja zwalnia pamiêæ po wykonaniu wszystkich operacji
+@param pHead adres pierwszego elementu listy jednokierunkowej przekonwertowanego na ONP równania
+@param input adres ³añcucha znaków zawieraj¹cego otrzymane od u¿ytkownika równanie
+*/
+void FreeMemory(struct Onp* pHead, char* input);
 //--------------------------------------------------------------------------------------------------------------------
 // -----------------------------------------------------------------------------------------------------File functions
 

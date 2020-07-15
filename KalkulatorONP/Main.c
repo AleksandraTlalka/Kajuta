@@ -25,20 +25,17 @@ int main(int argc, char* argv[]) {
 		input = getUserChoice(argv[1]);
 		printf("\n Entered exuation: %s\n", input);
 	}
-
 	for (;;) {
 		if (started==true) {
 			input = getUserInput();
 		}
-		started = true;
-
+		divideByZero(input);
 		struct Onp* pHead = onpBuilder(result, input, rewrite);
+		started = true;
 		rewrite = true;
 
 		if (pHead->type == done) {
-			freeOnp(pHead);
-			pHead = NULL;
-			free(input);
+			FreeMemory(pHead, input);
 			break;
 		}
 		else if (pHead->type == clear) {
@@ -49,14 +46,12 @@ int main(int argc, char* argv[]) {
 			printOnp(pHead);
 			addOnpToFile(pHead);
 			result = calculator(pHead);
-			printf("\nResult:%5.2f\n", result);
+			printf("\n Result:%5.2f \n", result);
 			addResultToFile(result);
 			manual();
 			printf("%5.2f", result);
 		}
-		freeOnp(pHead);
-		pHead = NULL;
-		free(input);
+		FreeMemory(pHead, input);
 	}
 	//Memory leak detector:
 	_CrtDumpMemoryLeaks();

@@ -60,3 +60,9 @@ double getSingleResult(enum Type type, double head) {
 	case negation: return -head;
 	}
 }
+
+void FreeMemory(struct Onp* pHead, char* input) {
+	freeOnp(pHead);
+	pHead = NULL;
+	free(input);
+}

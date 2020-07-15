@@ -32,9 +32,7 @@ struct Onp* onpBuilder(double result, char* input, bool rewrite) {
 				numberIndex++;
 			}
 			else
-			{
 				pTail->value = pTail->value * 10 + charToDigit(input[i]);
-			}
 		}
 		else
 		{
@@ -42,19 +40,12 @@ struct Onp* onpBuilder(double result, char* input, bool rewrite) {
 			if (!isspace(input[i])) {
 				type = getType(input[i]);
 
-				if (type == unn) {
-					printf("\nError: Wrong operator!\n\n");
-					toClear = true;
-					break;
-				}
-				else if (type == clear) {
-					printf("\n");
-					toClear = true;
+				if (type == unn || type == clear) {
+					toClear = setState(type);
 					break;
 				}
 				else if (type == done) {
-					printf("\nCalculator is quiting!\n");
-					toStop = true;
+					toStop = setState(type);
 					break;
 				}
 				else
@@ -73,7 +64,6 @@ struct Onp* onpBuilder(double result, char* input, bool rewrite) {
 		pTail = addToOnp(pTail, stack->type, UNDEFINED);
 		stack = removeFromStack(stack);
 	}
-
 	return stateControl(pTail, toClear, toStop);
 }
 
@@ -104,6 +94,23 @@ struct Onp* findOnpHead(struct Onp* pTail) {
 		pTail = pTail->pPrev;
 	}
 	return pTail;
+}
+
+bool setState(enum Type type) {
+	if (type == unn) {
+		printf("\nError: Wrong operator!\n\n");
+	}
+	else if (type == clear) {
+		printf("\n");
+	}
+	else if (type == done) {
+		printf("\nCalculator is quiting!\n");
+	}
+	else {
+		printf("\nError: Something wrong!\n");
+		return false;
+	}
+	return true;
 }
 
 struct Onp* stateControl(struct Onp* pTail, bool toClear, bool toStop) {

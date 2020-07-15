@@ -47,3 +47,13 @@ void manual() {
 	printf("3. To exit calculator press 'E'\n");
 	printf("\nEnter the exuation\n");
 }
+
+void divideByZero(char* input) {
+	char* tmp, *tmp2;
+	tmp = strstr(input, "/0");
+	if (tmp != NULL) {
+		if (strncmp(tmp, "/0.", 3) != 0 && strncmp(tmp, "/0,", 3) != 0) {
+			printf("\nYou shouldn't try to divide by 0!\n");
+		}
+	}
+}
