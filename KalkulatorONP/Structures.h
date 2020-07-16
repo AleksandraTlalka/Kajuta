@@ -4,13 +4,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/**
- * Prowizoryczny typ logiczny 
- */
-typedef enum {
-	false,
-	true
-} bool;
 
 /**
  * Typy znaków wystêpuj¹cych w równaniu

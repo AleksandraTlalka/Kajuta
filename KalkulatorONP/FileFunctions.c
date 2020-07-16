@@ -25,7 +25,7 @@ char* readFile(char* argv1) {
 		return _strdup(input);
 	}
 	else {
-		printf("Error: Can't find the file. Please enter the exuation manualy\n");
+		printf("Error: Can't find the file. Please enter the equation manualy\n");
 		return getUserInput();
 	}
 }

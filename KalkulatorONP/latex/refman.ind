@@ -1,0 +1,349 @@
+\begin{theindex}
+
+  \item {\_CRT\_SECURE\_NO\_DEPRECATE}
+    \subitem {Calculator.c}, \hyperpage{9}
+    \subitem {ConvertFunctions.c}, \hyperpage{14}
+    \subitem {FileFunctions.c}, \hyperpage{19}
+    \subitem {Main.c}, \hyperpage{22}
+    \subitem {OnpFunctions.c}, \hyperpage{23}
+    \subitem {StackFunctions.c}, \hyperpage{29}
+    \subitem {UiFunctions.c}, \hyperpage{36}
+
+  \indexspace
+
+  \item {addOnpToFile}
+    \subitem {FileFunctions.c}, \hyperpage{19}
+    \subitem {FileFunctions.h}, \hyperpage{21}
+  \item {addResultToFile}
+    \subitem {FileFunctions.c}, \hyperpage{20}
+    \subitem {FileFunctions.h}, \hyperpage{21}
+  \item {addToOnp}
+    \subitem {OnpFunctions.c}, \hyperpage{23}
+    \subitem {OnpFunctions.h}, \hyperpage{26}
+  \item {addToPair}
+    \subitem {OnpFunctions.c}, \hyperpage{24}
+    \subitem {OnpFunctions.h}, \hyperpage{27}
+  \item {addToStack}
+    \subitem {StackFunctions.c}, \hyperpage{30}
+    \subitem {StackFunctions.h}, \hyperpage{32}
+
+  \indexspace
+
+  \item {begin}
+    \subitem {Structures.h}, \hyperpage{35}
+  \item {bool}
+    \subitem {Structures.h}, \hyperpage{35}
+
+  \indexspace
+
+  \item {calculator}
+    \subitem {Calculator.c}, \hyperpage{10}
+    \subitem {Calculator.h}, \hyperpage{11}
+  \item {Calculator.c}, \hyperpage{9}
+    \subitem {\_CRT\_SECURE\_NO\_DEPRECATE}, \hyperpage{9}
+    \subitem {calculator}, \hyperpage{10}
+    \subitem {FreeMemory}, \hyperpage{10}
+    \subitem {getMultiResult}, \hyperpage{10}
+    \subitem {getSingleResult}, \hyperpage{11}
+  \item {Calculator.h}, \hyperpage{11}
+    \subitem {calculator}, \hyperpage{11}
+    \subitem {FreeMemory}, \hyperpage{12}
+    \subitem {getMultiResult}, \hyperpage{12}
+    \subitem {getSingleResult}, \hyperpage{12}
+  \item {charToDigit}
+    \subitem {ConvertFunctions.c}, \hyperpage{15}
+    \subitem {ConvertFunctions.h}, \hyperpage{17}
+  \item {clear}
+    \subitem {Structures.h}, \hyperpage{35}
+  \item {Constans.h}, \hyperpage{13}
+    \subitem {END\_ARRAY}, \hyperpage{13}
+    \subitem {INPUT\_SIZE}, \hyperpage{13}
+    \subitem {MULTI\_ARGUMENTS}, \hyperpage{13}
+    \subitem {STACK\_SIZE}, \hyperpage{14}
+    \subitem {UNDEFINED}, \hyperpage{14}
+  \item {ConvertFunctions.c}, \hyperpage{14}
+    \subitem {\_CRT\_SECURE\_NO\_DEPRECATE}, \hyperpage{14}
+    \subitem {charToDigit}, \hyperpage{15}
+    \subitem {getFraction}, \hyperpage{15}
+    \subitem {getOperation}, \hyperpage{15}
+    \subitem {getPriority}, \hyperpage{16}
+    \subitem {getType}, \hyperpage{16}
+  \item {ConvertFunctions.h}, \hyperpage{16}
+    \subitem {charToDigit}, \hyperpage{17}
+    \subitem {getFraction}, \hyperpage{17}
+    \subitem {getOperation}, \hyperpage{17}
+    \subitem {getPriority}, \hyperpage{18}
+    \subitem {getType}, \hyperpage{18}
+  \item {cosinus}
+    \subitem {Structures.h}, \hyperpage{35}
+
+  \indexspace
+
+  \item {Debug/KalkulatorONP.vcxproj.FileListAbsolute.txt}, 
+		\hyperpage{19}
+  \item {divide}
+    \subitem {Structures.h}, \hyperpage{35}
+  \item {divideByZero}
+    \subitem {UiFunctions.c}, \hyperpage{36}
+    \subitem {UiFunctions.h}, \hyperpage{38}
+  \item {done}
+    \subitem {Structures.h}, \hyperpage{35}
+  \item {dot}
+    \subitem {Structures.h}, \hyperpage{35}
+
+  \indexspace
+
+  \item {emptyStack}
+    \subitem {StackFunctions.c}, \hyperpage{30}
+    \subitem {StackFunctions.h}, \hyperpage{33}
+  \item {end}
+    \subitem {Structures.h}, \hyperpage{35}
+  \item {END\_ARRAY}
+    \subitem {Constans.h}, \hyperpage{13}
+
+  \indexspace
+
+  \item {false}
+    \subitem {Structures.h}, \hyperpage{35}
+  \item {FileFunctions.c}, \hyperpage{19}
+    \subitem {\_CRT\_SECURE\_NO\_DEPRECATE}, \hyperpage{19}
+    \subitem {addOnpToFile}, \hyperpage{19}
+    \subitem {addResultToFile}, \hyperpage{20}
+    \subitem {readFile}, \hyperpage{20}
+  \item {FileFunctions.h}, \hyperpage{20}
+    \subitem {addOnpToFile}, \hyperpage{21}
+    \subitem {addResultToFile}, \hyperpage{21}
+    \subitem {readFile}, \hyperpage{21}
+  \item {findOnpHead}
+    \subitem {OnpFunctions.c}, \hyperpage{24}
+    \subitem {OnpFunctions.h}, \hyperpage{27}
+  \item {FreeMemory}
+    \subitem {Calculator.c}, \hyperpage{10}
+    \subitem {Calculator.h}, \hyperpage{12}
+  \item {freeOnp}
+    \subitem {OnpFunctions.c}, \hyperpage{24}
+    \subitem {OnpFunctions.h}, \hyperpage{27}
+
+  \indexspace
+
+  \item {getFraction}
+    \subitem {ConvertFunctions.c}, \hyperpage{15}
+    \subitem {ConvertFunctions.h}, \hyperpage{17}
+  \item {getMultiResult}
+    \subitem {Calculator.c}, \hyperpage{10}
+    \subitem {Calculator.h}, \hyperpage{12}
+  \item {getOperation}
+    \subitem {ConvertFunctions.c}, \hyperpage{15}
+    \subitem {ConvertFunctions.h}, \hyperpage{17}
+  \item {getPriority}
+    \subitem {ConvertFunctions.c}, \hyperpage{16}
+    \subitem {ConvertFunctions.h}, \hyperpage{18}
+  \item {getSingleResult}
+    \subitem {Calculator.c}, \hyperpage{11}
+    \subitem {Calculator.h}, \hyperpage{12}
+  \item {getType}
+    \subitem {ConvertFunctions.c}, \hyperpage{16}
+    \subitem {ConvertFunctions.h}, \hyperpage{18}
+  \item {getUserChoice}
+    \subitem {UiFunctions.c}, \hyperpage{37}
+    \subitem {UiFunctions.h}, \hyperpage{38}
+  \item {getUserInput}
+    \subitem {UiFunctions.c}, \hyperpage{37}
+    \subitem {UiFunctions.h}, \hyperpage{39}
+
+  \indexspace
+
+  \item {history.txt}, \hyperpage{22}
+
+  \indexspace
+
+  \item {INPUT\_SIZE}
+    \subitem {Constans.h}, \hyperpage{13}
+
+  \indexspace
+
+  \item {logarithm}
+    \subitem {Structures.h}, \hyperpage{35}
+
+  \indexspace
+
+  \item {main}
+    \subitem {Main.c}, \hyperpage{22}
+  \item {Main.c}, \hyperpage{22}
+    \subitem {\_CRT\_SECURE\_NO\_DEPRECATE}, \hyperpage{22}
+    \subitem {main}, \hyperpage{22}
+  \item {manual}
+    \subitem {UiFunctions.c}, \hyperpage{37}
+    \subitem {UiFunctions.h}, \hyperpage{39}
+  \item {minus}
+    \subitem {Structures.h}, \hyperpage{35}
+  \item {modyfyStack}
+    \subitem {StackFunctions.c}, \hyperpage{30}
+    \subitem {StackFunctions.h}, \hyperpage{33}
+  \item {mulipy}
+    \subitem {Structures.h}, \hyperpage{35}
+  \item {MULTI\_ARGUMENTS}
+    \subitem {Constans.h}, \hyperpage{13}
+
+  \indexspace
+
+  \item {negation}
+    \subitem {Structures.h}, \hyperpage{35}
+  \item {number}
+    \subitem {Structures.h}, \hyperpage{35}
+
+  \indexspace
+
+  \item {Onp}, \hyperpage{5}
+    \subitem {pNext}, \hyperpage{5}
+    \subitem {pPrev}, \hyperpage{5}
+    \subitem {type}, \hyperpage{6}
+    \subitem {value}, \hyperpage{6}
+  \item {onpBuilder}
+    \subitem {OnpFunctions.c}, \hyperpage{25}
+    \subitem {OnpFunctions.h}, \hyperpage{28}
+  \item {OnpFunctions.c}, \hyperpage{23}
+    \subitem {\_CRT\_SECURE\_NO\_DEPRECATE}, \hyperpage{23}
+    \subitem {addToOnp}, \hyperpage{23}
+    \subitem {addToPair}, \hyperpage{24}
+    \subitem {findOnpHead}, \hyperpage{24}
+    \subitem {freeOnp}, \hyperpage{24}
+    \subitem {onpBuilder}, \hyperpage{25}
+    \subitem {setState}, \hyperpage{25}
+    \subitem {stateControl}, \hyperpage{26}
+  \item {OnpFunctions.h}, \hyperpage{26}
+    \subitem {addToOnp}, \hyperpage{26}
+    \subitem {addToPair}, \hyperpage{27}
+    \subitem {findOnpHead}, \hyperpage{27}
+    \subitem {freeOnp}, \hyperpage{27}
+    \subitem {onpBuilder}, \hyperpage{28}
+    \subitem {setState}, \hyperpage{28}
+    \subitem {stateControl}, \hyperpage{29}
+
+  \indexspace
+
+  \item {Pair}, \hyperpage{6}
+    \subitem {pOnp}, \hyperpage{6}
+    \subitem {pStack}, \hyperpage{7}
+  \item {percentage}
+    \subitem {Structures.h}, \hyperpage{35}
+  \item {plus}
+    \subitem {Structures.h}, \hyperpage{35}
+  \item {pNext}
+    \subitem {Onp}, \hyperpage{5}
+  \item {pOnp}
+    \subitem {Pair}, \hyperpage{6}
+  \item {power}
+    \subitem {Structures.h}, \hyperpage{35}
+  \item {pPrev}
+    \subitem {Onp}, \hyperpage{5}
+    \subitem {Stack}, \hyperpage{7}
+  \item {printOnp}
+    \subitem {UiFunctions.c}, \hyperpage{37}
+    \subitem {UiFunctions.h}, \hyperpage{39}
+  \item {prioryty}
+    \subitem {Stack}, \hyperpage{7}
+  \item {pStack}
+    \subitem {Pair}, \hyperpage{7}
+
+  \indexspace
+
+  \item {readFile}
+    \subitem {FileFunctions.c}, \hyperpage{20}
+    \subitem {FileFunctions.h}, \hyperpage{21}
+  \item {removeFromStack}
+    \subitem {StackFunctions.c}, \hyperpage{31}
+    \subitem {StackFunctions.h}, \hyperpage{33}
+
+  \indexspace
+
+  \item {setState}
+    \subitem {OnpFunctions.c}, \hyperpage{25}
+    \subitem {OnpFunctions.h}, \hyperpage{28}
+  \item {sinus}
+    \subitem {Structures.h}, \hyperpage{35}
+  \item {Stack}, \hyperpage{7}
+    \subitem {pPrev}, \hyperpage{7}
+    \subitem {prioryty}, \hyperpage{7}
+    \subitem {type}, \hyperpage{8}
+  \item {STACK\_SIZE}
+    \subitem {Constans.h}, \hyperpage{14}
+  \item {stackAction}
+    \subitem {StackFunctions.c}, \hyperpage{31}
+    \subitem {StackFunctions.h}, \hyperpage{34}
+  \item {StackFunctions.c}, \hyperpage{29}
+    \subitem {\_CRT\_SECURE\_NO\_DEPRECATE}, \hyperpage{29}
+    \subitem {addToStack}, \hyperpage{30}
+    \subitem {emptyStack}, \hyperpage{30}
+    \subitem {modyfyStack}, \hyperpage{30}
+    \subitem {removeFromStack}, \hyperpage{31}
+    \subitem {stackAction}, \hyperpage{31}
+  \item {StackFunctions.h}, \hyperpage{32}
+    \subitem {addToStack}, \hyperpage{32}
+    \subitem {emptyStack}, \hyperpage{33}
+    \subitem {modyfyStack}, \hyperpage{33}
+    \subitem {removeFromStack}, \hyperpage{33}
+    \subitem {stackAction}, \hyperpage{34}
+  \item {stateControl}
+    \subitem {OnpFunctions.c}, \hyperpage{26}
+    \subitem {OnpFunctions.h}, \hyperpage{29}
+  \item {Structures.h}, \hyperpage{34}
+    \subitem {begin}, \hyperpage{35}
+    \subitem {bool}, \hyperpage{35}
+    \subitem {clear}, \hyperpage{35}
+    \subitem {cosinus}, \hyperpage{35}
+    \subitem {divide}, \hyperpage{35}
+    \subitem {done}, \hyperpage{35}
+    \subitem {dot}, \hyperpage{35}
+    \subitem {end}, \hyperpage{35}
+    \subitem {false}, \hyperpage{35}
+    \subitem {logarithm}, \hyperpage{35}
+    \subitem {minus}, \hyperpage{35}
+    \subitem {mulipy}, \hyperpage{35}
+    \subitem {negation}, \hyperpage{35}
+    \subitem {number}, \hyperpage{35}
+    \subitem {percentage}, \hyperpage{35}
+    \subitem {plus}, \hyperpage{35}
+    \subitem {power}, \hyperpage{35}
+    \subitem {sinus}, \hyperpage{35}
+    \subitem {true}, \hyperpage{35}
+    \subitem {Type}, \hyperpage{35}
+    \subitem {unn}, \hyperpage{35}
+
+  \indexspace
+
+  \item {Test.txt}, \hyperpage{36}
+  \item {true}
+    \subitem {Structures.h}, \hyperpage{35}
+  \item {Type}
+    \subitem {Structures.h}, \hyperpage{35}
+  \item {type}
+    \subitem {Onp}, \hyperpage{6}
+    \subitem {Stack}, \hyperpage{8}
+
+  \indexspace
+
+  \item {UiFunctions.c}, \hyperpage{36}
+    \subitem {\_CRT\_SECURE\_NO\_DEPRECATE}, \hyperpage{36}
+    \subitem {divideByZero}, \hyperpage{36}
+    \subitem {getUserChoice}, \hyperpage{37}
+    \subitem {getUserInput}, \hyperpage{37}
+    \subitem {manual}, \hyperpage{37}
+    \subitem {printOnp}, \hyperpage{37}
+  \item {UiFunctions.h}, \hyperpage{38}
+    \subitem {divideByZero}, \hyperpage{38}
+    \subitem {getUserChoice}, \hyperpage{38}
+    \subitem {getUserInput}, \hyperpage{39}
+    \subitem {manual}, \hyperpage{39}
+    \subitem {printOnp}, \hyperpage{39}
+  \item {UNDEFINED}
+    \subitem {Constans.h}, \hyperpage{14}
+  \item {unn}
+    \subitem {Structures.h}, \hyperpage{35}
+
+  \indexspace
+
+  \item {value}
+    \subitem {Onp}, \hyperpage{6}
+
+\end{theindex}

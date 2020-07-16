@@ -9,6 +9,7 @@
 #include "Structures.h"
 #include "ConvertFunctions.h"
 #include "StackFunctions.h"
+#include "OnpFunctions.h"
 
 
 struct Pair* stackAction(struct Stack* pStack, struct Onp* pTail, enum Type type)

@@ -44,10 +44,10 @@ void printOnp(struct Onp* pHead) {
 
 void manual() {
 	printf("\nCalcuator manual:\n");
-	printf("1. Calcutaror allows commands: '+','-','^','*','/','N'(negation),'ln','sin','cos' and decimal floating-point numbers\n");
+	printf("1. Calcutaror allows commands: '(',')','+','-','^','*','/','N'(negation),'%%','ln','sin','cos' and decimal floating-point numbers\n");
 	printf("3. To clear already existing numbers and commands press 'C'\n");
 	printf("3. To exit calculator press 'E'\n");
-	printf("\nEnter the exuation\n");
+	printf("\nEnter the equation\n");
 }
 
 void divideByZero(char* input) {
@@ -55,7 +55,7 @@ void divideByZero(char* input) {
 	tmp = strstr(input, "/0");
 	if (tmp != NULL) {
 		if (strncmp(tmp, "/0.", 3) != 0 && strncmp(tmp, "/0,", 3) != 0) {
-			printf("\nYou shouldn't try to divide by 0!\n");
+			printf("\nError: You shouldn't try to divide by 0!\n");
 		}
 	}
 }

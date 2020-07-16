@@ -1,0 +1,140 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\babel@toc {polish}{}
+\contentsline {chapter}{\numberline {1}Indeks struktur danych}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Struktury danych}{1}{section.1.1}%
+\contentsline {chapter}{\numberline {2}Indeks plików}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Lista plików}{3}{section.2.1}%
+\contentsline {chapter}{\numberline {3}Dokumentacja struktur danych}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Dokumentacja struktury Onp}{5}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Opis szczegółowy}{5}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Dokumentacja pól}{5}{subsection.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.2.1}pNext}{5}{subsubsection.3.1.2.1}%
+\contentsline {subsubsection}{\numberline {3.1.2.2}pPrev}{6}{subsubsection.3.1.2.2}%
+\contentsline {subsubsection}{\numberline {3.1.2.3}type}{6}{subsubsection.3.1.2.3}%
+\contentsline {subsubsection}{\numberline {3.1.2.4}value}{6}{subsubsection.3.1.2.4}%
+\contentsline {section}{\numberline {3.2}Dokumentacja struktury Pair}{6}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Opis szczegółowy}{6}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Dokumentacja pól}{6}{subsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.2.1}pOnp}{7}{subsubsection.3.2.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2.2}pStack}{7}{subsubsection.3.2.2.2}%
+\contentsline {section}{\numberline {3.3}Dokumentacja struktury Stack}{7}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Opis szczegółowy}{7}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Dokumentacja pól}{7}{subsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.2.1}pPrev}{7}{subsubsection.3.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.3.2.2}prioryty}{8}{subsubsection.3.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.3.2.3}type}{8}{subsubsection.3.3.2.3}%
+\contentsline {chapter}{\numberline {4}Dokumentacja plików}{9}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Dokumentacja pliku Calculator.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{9}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Dokumentacja definicji}{9}{subsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.1.1}\_CRT\_SECURE\_NO\_DEPRECATE}{9}{subsubsection.4.1.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Dokumentacja funkcji}{10}{subsection.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.2.1}calculator()}{10}{subsubsection.4.1.2.1}%
+\contentsline {subsubsection}{\numberline {4.1.2.2}FreeMemory()}{10}{subsubsection.4.1.2.2}%
+\contentsline {subsubsection}{\numberline {4.1.2.3}getMultiResult()}{10}{subsubsection.4.1.2.3}%
+\contentsline {subsubsection}{\numberline {4.1.2.4}getSingleResult()}{11}{subsubsection.4.1.2.4}%
+\contentsline {section}{\numberline {4.2}Dokumentacja pliku Calculator.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{11}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Dokumentacja funkcji}{11}{subsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.1.1}calculator()}{11}{subsubsection.4.2.1.1}%
+\contentsline {subsubsection}{\numberline {4.2.1.2}FreeMemory()}{12}{subsubsection.4.2.1.2}%
+\contentsline {subsubsection}{\numberline {4.2.1.3}getMultiResult()}{12}{subsubsection.4.2.1.3}%
+\contentsline {subsubsection}{\numberline {4.2.1.4}getSingleResult()}{13}{subsubsection.4.2.1.4}%
+\contentsline {section}{\numberline {4.3}Dokumentacja pliku Constans.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{13}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Dokumentacja definicji}{13}{subsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.1.1}END\_ARRAY}{13}{subsubsection.4.3.1.1}%
+\contentsline {subsubsection}{\numberline {4.3.1.2}INPUT\_SIZE}{13}{subsubsection.4.3.1.2}%
+\contentsline {subsubsection}{\numberline {4.3.1.3}MULTI\_ARGUMENTS}{14}{subsubsection.4.3.1.3}%
+\contentsline {subsubsection}{\numberline {4.3.1.4}STACK\_SIZE}{14}{subsubsection.4.3.1.4}%
+\contentsline {subsubsection}{\numberline {4.3.1.5}UNDEFINED}{14}{subsubsection.4.3.1.5}%
+\contentsline {section}{\numberline {4.4}Dokumentacja pliku Convert\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Functions.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{14}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Dokumentacja definicji}{14}{subsection.4.4.1}%
+\contentsline {subsubsection}{\numberline {4.4.1.1}\_CRT\_SECURE\_NO\_DEPRECATE}{14}{subsubsection.4.4.1.1}%
+\contentsline {subsection}{\numberline {4.4.2}Dokumentacja funkcji}{15}{subsection.4.4.2}%
+\contentsline {subsubsection}{\numberline {4.4.2.1}charToDigit()}{15}{subsubsection.4.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.4.2.2}getFraction()}{15}{subsubsection.4.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.4.2.3}getOperation()}{15}{subsubsection.4.4.2.3}%
+\contentsline {subsubsection}{\numberline {4.4.2.4}getPriority()}{16}{subsubsection.4.4.2.4}%
+\contentsline {subsubsection}{\numberline {4.4.2.5}getType()}{16}{subsubsection.4.4.2.5}%
+\contentsline {section}{\numberline {4.5}Dokumentacja pliku Convert\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Functions.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{16}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Dokumentacja funkcji}{17}{subsection.4.5.1}%
+\contentsline {subsubsection}{\numberline {4.5.1.1}charToDigit()}{17}{subsubsection.4.5.1.1}%
+\contentsline {subsubsection}{\numberline {4.5.1.2}getFraction()}{17}{subsubsection.4.5.1.2}%
+\contentsline {subsubsection}{\numberline {4.5.1.3}getOperation()}{18}{subsubsection.4.5.1.3}%
+\contentsline {subsubsection}{\numberline {4.5.1.4}getPriority()}{18}{subsubsection.4.5.1.4}%
+\contentsline {subsubsection}{\numberline {4.5.1.5}getType()}{18}{subsubsection.4.5.1.5}%
+\contentsline {section}{\numberline {4.6}Dokumentacja pliku Debug/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Kalkulator\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}O\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}NP.vcxproj.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}File\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}List\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Absolute.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}txt}{19}{section.4.6}%
+\contentsline {section}{\numberline {4.7}Dokumentacja pliku File\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Functions.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{19}{section.4.7}%
+\contentsline {subsection}{\numberline {4.7.1}Dokumentacja definicji}{19}{subsection.4.7.1}%
+\contentsline {subsubsection}{\numberline {4.7.1.1}\_CRT\_SECURE\_NO\_DEPRECATE}{19}{subsubsection.4.7.1.1}%
+\contentsline {subsection}{\numberline {4.7.2}Dokumentacja funkcji}{19}{subsection.4.7.2}%
+\contentsline {subsubsection}{\numberline {4.7.2.1}addOnpToFile()}{19}{subsubsection.4.7.2.1}%
+\contentsline {subsubsection}{\numberline {4.7.2.2}addResultToFile()}{20}{subsubsection.4.7.2.2}%
+\contentsline {subsubsection}{\numberline {4.7.2.3}readFile()}{20}{subsubsection.4.7.2.3}%
+\contentsline {section}{\numberline {4.8}Dokumentacja pliku File\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Functions.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{20}{section.4.8}%
+\contentsline {subsection}{\numberline {4.8.1}Dokumentacja funkcji}{21}{subsection.4.8.1}%
+\contentsline {subsubsection}{\numberline {4.8.1.1}addOnpToFile()}{21}{subsubsection.4.8.1.1}%
+\contentsline {subsubsection}{\numberline {4.8.1.2}addResultToFile()}{21}{subsubsection.4.8.1.2}%
+\contentsline {subsubsection}{\numberline {4.8.1.3}readFile()}{21}{subsubsection.4.8.1.3}%
+\contentsline {section}{\numberline {4.9}Dokumentacja pliku history.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}txt}{22}{section.4.9}%
+\contentsline {section}{\numberline {4.10}Dokumentacja pliku Main.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{22}{section.4.10}%
+\contentsline {subsection}{\numberline {4.10.1}Dokumentacja definicji}{22}{subsection.4.10.1}%
+\contentsline {subsubsection}{\numberline {4.10.1.1}\_CRT\_SECURE\_NO\_DEPRECATE}{22}{subsubsection.4.10.1.1}%
+\contentsline {subsection}{\numberline {4.10.2}Dokumentacja funkcji}{22}{subsection.4.10.2}%
+\contentsline {subsubsection}{\numberline {4.10.2.1}main()}{23}{subsubsection.4.10.2.1}%
+\contentsline {section}{\numberline {4.11}Dokumentacja pliku Onp\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Functions.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{23}{section.4.11}%
+\contentsline {subsection}{\numberline {4.11.1}Dokumentacja definicji}{23}{subsection.4.11.1}%
+\contentsline {subsubsection}{\numberline {4.11.1.1}\_CRT\_SECURE\_NO\_DEPRECATE}{23}{subsubsection.4.11.1.1}%
+\contentsline {subsection}{\numberline {4.11.2}Dokumentacja funkcji}{23}{subsection.4.11.2}%
+\contentsline {subsubsection}{\numberline {4.11.2.1}addToOnp()}{23}{subsubsection.4.11.2.1}%
+\contentsline {subsubsection}{\numberline {4.11.2.2}addToPair()}{24}{subsubsection.4.11.2.2}%
+\contentsline {subsubsection}{\numberline {4.11.2.3}findOnpHead()}{24}{subsubsection.4.11.2.3}%
+\contentsline {subsubsection}{\numberline {4.11.2.4}freeOnp()}{25}{subsubsection.4.11.2.4}%
+\contentsline {subsubsection}{\numberline {4.11.2.5}onpBuilder()}{25}{subsubsection.4.11.2.5}%
+\contentsline {subsubsection}{\numberline {4.11.2.6}setState()}{25}{subsubsection.4.11.2.6}%
+\contentsline {subsubsection}{\numberline {4.11.2.7}stateControl()}{26}{subsubsection.4.11.2.7}%
+\contentsline {section}{\numberline {4.12}Dokumentacja pliku Onp\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Functions.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{26}{section.4.12}%
+\contentsline {subsection}{\numberline {4.12.1}Dokumentacja funkcji}{26}{subsection.4.12.1}%
+\contentsline {subsubsection}{\numberline {4.12.1.1}addToOnp()}{26}{subsubsection.4.12.1.1}%
+\contentsline {subsubsection}{\numberline {4.12.1.2}addToPair()}{27}{subsubsection.4.12.1.2}%
+\contentsline {subsubsection}{\numberline {4.12.1.3}findOnpHead()}{27}{subsubsection.4.12.1.3}%
+\contentsline {subsubsection}{\numberline {4.12.1.4}freeOnp()}{28}{subsubsection.4.12.1.4}%
+\contentsline {subsubsection}{\numberline {4.12.1.5}onpBuilder()}{28}{subsubsection.4.12.1.5}%
+\contentsline {subsubsection}{\numberline {4.12.1.6}setState()}{28}{subsubsection.4.12.1.6}%
+\contentsline {subsubsection}{\numberline {4.12.1.7}stateControl()}{29}{subsubsection.4.12.1.7}%
+\contentsline {section}{\numberline {4.13}Dokumentacja pliku Stack\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Functions.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{29}{section.4.13}%
+\contentsline {subsection}{\numberline {4.13.1}Dokumentacja definicji}{29}{subsection.4.13.1}%
+\contentsline {subsubsection}{\numberline {4.13.1.1}\_CRT\_SECURE\_NO\_DEPRECATE}{30}{subsubsection.4.13.1.1}%
+\contentsline {subsection}{\numberline {4.13.2}Dokumentacja funkcji}{30}{subsection.4.13.2}%
+\contentsline {subsubsection}{\numberline {4.13.2.1}addToStack()}{30}{subsubsection.4.13.2.1}%
+\contentsline {subsubsection}{\numberline {4.13.2.2}emptyStack()}{30}{subsubsection.4.13.2.2}%
+\contentsline {subsubsection}{\numberline {4.13.2.3}modyfyStack()}{31}{subsubsection.4.13.2.3}%
+\contentsline {subsubsection}{\numberline {4.13.2.4}removeFromStack()}{31}{subsubsection.4.13.2.4}%
+\contentsline {subsubsection}{\numberline {4.13.2.5}stackAction()}{31}{subsubsection.4.13.2.5}%
+\contentsline {section}{\numberline {4.14}Dokumentacja pliku Stack\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Functions.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{32}{section.4.14}%
+\contentsline {subsection}{\numberline {4.14.1}Dokumentacja funkcji}{32}{subsection.4.14.1}%
+\contentsline {subsubsection}{\numberline {4.14.1.1}addToStack()}{32}{subsubsection.4.14.1.1}%
+\contentsline {subsubsection}{\numberline {4.14.1.2}emptyStack()}{33}{subsubsection.4.14.1.2}%
+\contentsline {subsubsection}{\numberline {4.14.1.3}modyfyStack()}{33}{subsubsection.4.14.1.3}%
+\contentsline {subsubsection}{\numberline {4.14.1.4}removeFromStack()}{33}{subsubsection.4.14.1.4}%
+\contentsline {subsubsection}{\numberline {4.14.1.5}stackAction()}{34}{subsubsection.4.14.1.5}%
+\contentsline {section}{\numberline {4.15}Dokumentacja pliku Structures.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{34}{section.4.15}%
+\contentsline {subsection}{\numberline {4.15.1}Dokumentacja typów wyliczanych}{35}{subsection.4.15.1}%
+\contentsline {subsubsection}{\numberline {4.15.1.1}bool}{35}{subsubsection.4.15.1.1}%
+\contentsline {subsubsection}{\numberline {4.15.1.2}Type}{35}{subsubsection.4.15.1.2}%
+\contentsline {section}{\numberline {4.16}Dokumentacja pliku Test.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}txt}{36}{section.4.16}%
+\contentsline {section}{\numberline {4.17}Dokumentacja pliku Ui\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Functions.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{36}{section.4.17}%
+\contentsline {subsection}{\numberline {4.17.1}Dokumentacja definicji}{36}{subsection.4.17.1}%
+\contentsline {subsubsection}{\numberline {4.17.1.1}\_CRT\_SECURE\_NO\_DEPRECATE}{36}{subsubsection.4.17.1.1}%
+\contentsline {subsection}{\numberline {4.17.2}Dokumentacja funkcji}{36}{subsection.4.17.2}%
+\contentsline {subsubsection}{\numberline {4.17.2.1}divideByZero()}{36}{subsubsection.4.17.2.1}%
+\contentsline {subsubsection}{\numberline {4.17.2.2}getUserChoice()}{37}{subsubsection.4.17.2.2}%
+\contentsline {subsubsection}{\numberline {4.17.2.3}getUserInput()}{37}{subsubsection.4.17.2.3}%
+\contentsline {subsubsection}{\numberline {4.17.2.4}manual()}{37}{subsubsection.4.17.2.4}%
+\contentsline {subsubsection}{\numberline {4.17.2.5}printOnp()}{37}{subsubsection.4.17.2.5}%
+\contentsline {section}{\numberline {4.18}Dokumentacja pliku Ui\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Functions.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{38}{section.4.18}%
+\contentsline {subsection}{\numberline {4.18.1}Dokumentacja funkcji}{38}{subsection.4.18.1}%
+\contentsline {subsubsection}{\numberline {4.18.1.1}divideByZero()}{38}{subsubsection.4.18.1.1}%
+\contentsline {subsubsection}{\numberline {4.18.1.2}getUserChoice()}{38}{subsubsection.4.18.1.2}%
+\contentsline {subsubsection}{\numberline {4.18.1.3}getUserInput()}{39}{subsubsection.4.18.1.3}%
+\contentsline {subsubsection}{\numberline {4.18.1.4}manual()}{39}{subsubsection.4.18.1.4}%
+\contentsline {subsubsection}{\numberline {4.18.1.5}printOnp()}{39}{subsubsection.4.18.1.5}%
+\contentsline {chapter}{Indeks}{41}{section*.27}%

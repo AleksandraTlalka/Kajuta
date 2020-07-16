@@ -5,6 +5,7 @@
 #include <ctype.h>
 #include <assert.h>
 #include <vld.h>
+#include <stdbool.h>
 
 #include "Constans.h"
 #include "Structures.h"
@@ -28,7 +29,7 @@ int main(int argc, char* argv[]) {
 	}
 	else {
 		input = getUserChoice(argv[1]);
-		printf("\n Entered exuation: %s\n", input);
+		printf("\n Entered equation: %s\n", input);
 	}
 	for (;;) {
 		if (started==true) {
