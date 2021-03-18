@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['bool_142',['bool',['../_structures_8h.html#af6a258d8f3ee5206d682d799316314b1',1,'Structures.h']]]
+  ['type_139',['Type',['../_structures_8h.html#a1d1cfd8ffb84e947f82999c682b666a7',1,'Structures.h']]]
 ];

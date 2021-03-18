@@ -5,7 +5,7 @@
 \doxysubsection*{Funkcje}
 \begin{DoxyCompactItemize}
 \item 
-struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$ \mbox{\hyperlink{_onp_functions_8h_aca33b4ca61f3b0e243bf2928c5ec3573}{onp\+Builder}} (double result, char $\ast$input, \mbox{\hyperlink{_structures_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} rewrite)
+struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$ \mbox{\hyperlink{_onp_functions_8h_aca33b4ca61f3b0e243bf2928c5ec3573}{onp\+Builder}} (double result, char $\ast$input, bool rewrite)
 \item 
 struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$ \mbox{\hyperlink{_onp_functions_8h_a19a2c214f3d579e85c1a4d862f2c3900}{add\+To\+Onp}} (struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$tail, enum \mbox{\hyperlink{_structures_8h_a1d1cfd8ffb84e947f82999c682b666a7}{Type}} type, double value)
 \item 
@@ -13,9 +13,9 @@ struct \mbox{\hyperlink{struct_pair}{Pair}} $\ast$ \mbox{\hyperlink{_onp_functio
 \item 
 struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$ \mbox{\hyperlink{_onp_functions_8h_a7256e18b1853e5958a83bf869dc7c503}{find\+Onp\+Head}} (struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$p\+Tail)
 \item 
-\mbox{\hyperlink{_structures_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} \mbox{\hyperlink{_onp_functions_8h_ada1f2576b2bb67ee99a3d0d1679ec3b8}{set\+State}} (enum \mbox{\hyperlink{_structures_8h_a1d1cfd8ffb84e947f82999c682b666a7}{Type}} type)
+bool \mbox{\hyperlink{_onp_functions_8h_ada1f2576b2bb67ee99a3d0d1679ec3b8}{set\+State}} (enum \mbox{\hyperlink{_structures_8h_a1d1cfd8ffb84e947f82999c682b666a7}{Type}} type)
 \item 
-struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$ \mbox{\hyperlink{_onp_functions_8h_a06d601a646f481e88b29d464f8b972be}{state\+Control}} (struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$p\+Tail, \mbox{\hyperlink{_structures_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} to\+Clear, \mbox{\hyperlink{_structures_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} to\+Stop)
+struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$ \mbox{\hyperlink{_onp_functions_8h_a06d601a646f481e88b29d464f8b972be}{state\+Control}} (struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$p\+Tail, bool to\+Clear, bool to\+Stop)
 \item 
 void \mbox{\hyperlink{_onp_functions_8h_a1aa3f363ae68da2b93b02657f998da6b}{free\+Onp}} (struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$p\+Head)
 \end{DoxyCompactItemize}
@@ -85,7 +85,7 @@ Funkcja usuwa od początku listę jednokierunkową przekonwertowanego na O\+NP r
 \index{OnpFunctions.h@{OnpFunctions.h}!onpBuilder@{onpBuilder}}
 \index{onpBuilder@{onpBuilder}!OnpFunctions.h@{OnpFunctions.h}}
 \doxysubsubsection{\texorpdfstring{onpBuilder()}{onpBuilder()}}
-{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_onp}{Onp}}$\ast$ onp\+Builder (\begin{DoxyParamCaption}\item[{double}]{result,  }\item[{char $\ast$}]{input,  }\item[{\mbox{\hyperlink{_structures_8h_af6a258d8f3ee5206d682d799316314b1}{bool}}}]{rewrite }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_onp}{Onp}}$\ast$ onp\+Builder (\begin{DoxyParamCaption}\item[{double}]{result,  }\item[{char $\ast$}]{input,  }\item[{bool}]{rewrite }\end{DoxyParamCaption})}
 
 Funkcja służy do przekonwertowania równania ze standardowej notacji do odwrotnej notacji polskiej 
 \begin{DoxyParams}{Parametry}
@@ -103,7 +103,7 @@ adres pierwszego elementu przekonwertowanego na O\+NP równania
 \index{OnpFunctions.h@{OnpFunctions.h}!setState@{setState}}
 \index{setState@{setState}!OnpFunctions.h@{OnpFunctions.h}}
 \doxysubsubsection{\texorpdfstring{setState()}{setState()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{_structures_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} set\+State (\begin{DoxyParamCaption}\item[{enum \mbox{\hyperlink{_structures_8h_a1d1cfd8ffb84e947f82999c682b666a7}{Type}}}]{type }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily bool set\+State (\begin{DoxyParamCaption}\item[{enum \mbox{\hyperlink{_structures_8h_a1d1cfd8ffb84e947f82999c682b666a7}{Type}}}]{type }\end{DoxyParamCaption})}
 
 Funkcja ustala czy kalkulator powinien zakończyć działanie lub wyczyścić wyświetlacz 
 \begin{DoxyParams}{Parametry}
@@ -117,7 +117,7 @@ true albo false w zależności co zostanie ustalone
 \index{OnpFunctions.h@{OnpFunctions.h}!stateControl@{stateControl}}
 \index{stateControl@{stateControl}!OnpFunctions.h@{OnpFunctions.h}}
 \doxysubsubsection{\texorpdfstring{stateControl()}{stateControl()}}
-{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_onp}{Onp}}$\ast$ state\+Control (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$}]{p\+Tail,  }\item[{\mbox{\hyperlink{_structures_8h_af6a258d8f3ee5206d682d799316314b1}{bool}}}]{to\+Clear,  }\item[{\mbox{\hyperlink{_structures_8h_af6a258d8f3ee5206d682d799316314b1}{bool}}}]{to\+Stop }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_onp}{Onp}}$\ast$ state\+Control (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_onp}{Onp}} $\ast$}]{p\+Tail,  }\item[{bool}]{to\+Clear,  }\item[{bool}]{to\+Stop }\end{DoxyParamCaption})}
 
 Funkcja sprawdza czy kalkulator spełnia warunki do kontynuowania pracy w niezmienionym stanie 
 \begin{DoxyParams}{Parametry}
